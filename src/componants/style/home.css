@@ -1,0 +1,16 @@
+.hand {
+  transform: rotate(0deg);
+  animation: floater 1.5s infinite;
+  font-size: 24px;
+  margin-left: 2%;
+}
+@keyframes floater {
+  0% {
+    transform: rotate(0deg);
+    transition: ease 0.5s;
+  }
+  50% {
+    transform: rotate(15deg);
+    transition: ease 0.5s;
+  }
+}
