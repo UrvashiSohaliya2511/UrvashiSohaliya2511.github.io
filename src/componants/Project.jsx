@@ -48,7 +48,7 @@ const Project = () => {
       >
         <Box w="70%" m="auto" className="card">
           <Stack w="100%" h={"370px"} style={cardStyle}>
-            <Heading fontSize="27px">NORDSTROMRACK.COM - CLONE</Heading>
+            <Heading fontSize="150%">NORDSTROMRACK.COM - CLONE</Heading>
             <Text>
               Nordstromrack.com is an apparel and accessories e-commerce website
               that delivers an immersive and engaging shopping experience.
@@ -89,7 +89,7 @@ const Project = () => {
         </Box>
         <Box w="70%" m="auto" className="card">
           <Stack w="100%" h={"370px"} style={cardStyle}>
-            <Heading fontSize="27px">BESTBUY.COM - CLONE</Heading>
+            <Heading fontSize="150%">BESTBUY.COM - CLONE</Heading>
             <Text>
               Bestbuy.com is an e-commerce website for various electronic
               products like laptops, home appliances, etc.
