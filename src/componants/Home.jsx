@@ -20,16 +20,16 @@ const profile = require("../componants/Assets/Profile3.png");
 const Home = () => {
   const imagestyle = {
     width: "90%",
-    height: "70%",
+    height: "65%",
   };
 
   return (
     <>
       {" "}
-      <Stack h="100vh" id="home" mt={["-10px"]} w="100%">
+      <Stack h="100vh" id="home" mt={["-10px"]} w="100%" bg="black">
         <Flex
           m="auto"
-          direction={["column", "row", "row"]}
+          direction={["column", "column", "row"]}
           h="100%"
           align="center"
           w="100%"
@@ -38,42 +38,56 @@ const Home = () => {
             textAlign="left"
             m="auto"
             spacing={3}
-            w={["100%", "65%", "70%"]}
+            w={["100%", "100%", "65%", "70%"]}
             h="100%"
             justify="center"
             pl={"10%"}
           >
-            <Box w={"20%"}>
-              <Flex gap={2} bg="green" p={1} align="center">
+            <Box w={["30%", "25%", "30%", "20%"]}>
+              <Flex gap={2} bg="pink" p={1} align="center">
                 <Heading fontWeight="300" color="white">
                   Hello
                 </Heading>
                 <Heading className="hand">👋</Heading>
               </Flex>
 
-              <Box style={arrow} bg="green"></Box>
+              <Box style={arrow} bg="pink"></Box>
             </Box>
-            <Heading fontSize="60px" color="darkslategray">
+            <Heading fontSize="60px" color="white">
               I'm Urvashi
             </Heading>
-            <Heading fontSize="40px" color="darkslategray">
+            <Heading fontSize="40px" color="white">
               Full Stack Web Developer
             </Heading>
             <Flex align="center" gap={5}>
-              <Button bg="green" color="white">
+              <Button bg="pink" color="white">
                 Resume
               </Button>
-              <Link className="iconlink" fontSize="30px" color="darkslategray">
+              <Link
+                className="iconlink"
+                bg="white"
+                borderRadius="50%"
+                border="1px solid black"
+                fontSize="30px"
+                color="pink"
+              >
                 <BsGithub className="icon" />
               </Link>
             </Flex>
           </Stack>
-          <Box w={["100%", "35%", "30%"]} h="100%" align="center">
+          <Box
+            w={["100%", "100%", "45%", "30%"]}
+            h="100%"
+            align="center"
+            pt={3}
+          >
             <Image
+              border=" 2px solid #c3073f"
               src="{profile}"
-              w={["90%", "85%"]}
-              h={["90%", "85%", "70%", "65%"]}
-              mt={["5%", "30%"]}
+              w={["90%", "72%"]}
+              h={["90%", "85%", "50%", "50%"]}
+              mt={["5%", "12%", "50%", "30%"]}
+              bg="#B0B8B4FF"
             />
           </Box>
         </Flex>

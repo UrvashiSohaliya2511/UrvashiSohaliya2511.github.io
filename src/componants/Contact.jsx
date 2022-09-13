@@ -5,10 +5,10 @@ const Contact = () => {
   return (
     <Box id="contact" h="100vh">
       <Box w="14%" m="auto">
-        <Heading bg="green" fontWeight="300" color="white">
+        <Heading bg="pink" fontWeight="300" color="white">
           Contacts
         </Heading>
-        <Box style={arrow} bg="green"></Box>
+        <Box style={arrow} bg="pink"></Box>
       </Box>
     </Box>
   );

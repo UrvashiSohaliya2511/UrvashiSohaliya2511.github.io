@@ -12,7 +12,27 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+p,
+h1 {
+  animation: 3s anim-lineUp ease-out;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

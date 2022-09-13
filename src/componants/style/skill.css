@@ -1,0 +1,21 @@
+/* #skillDiv {
+} */
+#skillDiv img {
+  width: 70px;
+  height: 70px;
+  transform: rotate(0deg);
+  animation: rotate-vertical 5s ease-out infinite;
+  font-size: 24px;
+}
+#skillDiv p {
+  font-weight: bold;
+  color: #6f2232;
+}
+@keyframes rotate-vertical {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}

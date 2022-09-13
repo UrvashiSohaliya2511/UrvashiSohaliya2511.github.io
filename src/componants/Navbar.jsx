@@ -24,14 +24,14 @@ const Navbar = () => {
   };
 
   return (
-    <Stack style={navstyle} bg="transperent" p={2}>
+    <Stack style={navstyle} bg="transperent" p={2} color="#4e4e50">
       <SimpleGrid
         columns={2}
         align="center"
         justify="space-between"
         id="navbar"
       >
-        <IoIosRose fontSize="34px" />
+        <IoIosRose fontSize="34px" color="#c3073f" />
         <Flex
           columns={5}
           align="center"
