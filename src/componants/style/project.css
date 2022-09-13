@@ -1,0 +1,11 @@
+#projects img {
+  transition: transform 0.5s;
+}
+.imageBox {
+  overflow: hidden;
+  box-shadow: #6f2232 0px 4px 8px -2px, #db4d69 0px 0px 0px 1px;
+  border-radius: 10px;
+}
+#projects img:hover {
+  transform: scale(1.1);
+}

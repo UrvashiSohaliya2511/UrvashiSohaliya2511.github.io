@@ -26,7 +26,7 @@ const Home = () => {
   return (
     <>
       {" "}
-      <Stack h="100vh" id="home" mt={["-10px"]} w="100%" bg="black">
+      <Stack id="home" h="100vh" mt={["-10px"]} w="100%" bg="black" pb={3}>
         <Flex
           m="auto"
           direction={["column", "column", "row"]}
@@ -83,10 +83,10 @@ const Home = () => {
           >
             <Image
               border=" 2px solid #c3073f"
-              src="{profile}"
+              src={profile}
               w={["90%", "72%"]}
               h={["90%", "85%", "50%", "50%"]}
-              mt={["5%", "12%", "50%", "30%"]}
+              mt={["5%", "5%", "50%", "30%"]}
               bg="#B0B8B4FF"
             />
           </Box>
