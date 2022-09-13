@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.830f72c1.css",
-    "main.js": "/static/js/main.4a0e2bfa.js",
+    "main.css": "/static/css/main.2783aba4.css",
+    "main.js": "/static/js/main.57c621af.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/nord.png": "/static/media/nord.b13bf6af60ea6fb8a157.png",
+    "static/media/bestbuy.png": "/static/media/bestbuy.e1d859eba0e5d7baadd6.png",
     "static/media/Profile3.png": "/static/media/Profile3.d61afdf11c1468e9a7a8.png",
     "static/media/node.png": "/static/media/node.1fac080eeec0a547c743.png",
     "static/media/html.png": "/static/media/html.67c5dff43ae548efd534.png",
     "static/media/css.png": "/static/media/css.463e319bad8e0edf1ef7.png",
     "static/media/js.png": "/static/media/js.3dfb665e058d08c99f28.png",
     "index.html": "/index.html",
-    "main.830f72c1.css.map": "/static/css/main.830f72c1.css.map",
-    "main.4a0e2bfa.js.map": "/static/js/main.4a0e2bfa.js.map",
+    "main.2783aba4.css.map": "/static/css/main.2783aba4.css.map",
+    "main.57c621af.js.map": "/static/js/main.57c621af.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.830f72c1.css",
-    "static/js/main.4a0e2bfa.js"
+    "static/css/main.2783aba4.css",
+    "static/js/main.57c621af.js"
   ]
 }
