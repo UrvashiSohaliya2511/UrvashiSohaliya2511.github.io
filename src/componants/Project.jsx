@@ -32,7 +32,7 @@ const imgcardstyle = {
 const Project = () => {
   return (
     <Box id="projects">
-      <Box m="auto" w={["50%", "40%", "30%", "20%"]}>
+      <Box m="auto" w={["50%", "40%", "30%", "15%"]}>
         <Heading bg="pink" fontWeight="300" color="white">
           Projects
         </Heading>
