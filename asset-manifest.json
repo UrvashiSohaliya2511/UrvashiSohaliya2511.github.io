@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ca86a826.css",
-    "main.js": "/static/js/main.764b4f0d.js",
+    "main.css": "/static/css/main.08a8e54c.css",
+    "main.js": "/static/js/main.91f359e5.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/nord.png": "/static/media/nord.b13bf6af60ea6fb8a157.png",
     "static/media/bestbuy.png": "/static/media/bestbuy.e1d859eba0e5d7baadd6.png",
@@ -18,12 +18,12 @@
     "static/media/css.png": "/static/media/css.463e319bad8e0edf1ef7.png",
     "static/media/js.png": "/static/media/js.3dfb665e058d08c99f28.png",
     "index.html": "/index.html",
-    "main.ca86a826.css.map": "/static/css/main.ca86a826.css.map",
-    "main.764b4f0d.js.map": "/static/js/main.764b4f0d.js.map",
+    "main.08a8e54c.css.map": "/static/css/main.08a8e54c.css.map",
+    "main.91f359e5.js.map": "/static/js/main.91f359e5.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca86a826.css",
-    "static/js/main.764b4f0d.js"
+    "static/css/main.08a8e54c.css",
+    "static/js/main.91f359e5.js"
   ]
 }
