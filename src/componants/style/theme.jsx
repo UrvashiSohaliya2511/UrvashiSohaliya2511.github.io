@@ -2,7 +2,7 @@ import { extendTheme } from "@chakra-ui/react";
 
 export const theme = extendTheme({
   colors: {
-    pink: "#c3073f",
+    pink: "#9b37ff",
     lightpink: "#A16E83",
     yellow: "#CEBC81",
     peach: "#B19F9E",

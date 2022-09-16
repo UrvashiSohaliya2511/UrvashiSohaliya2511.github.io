@@ -17,6 +17,7 @@ import {
 import { BsGithub } from "react-icons/bs";
 import { arrow } from "./style/theme";
 const profile = require("../componants/Assets/Profile3.png");
+const bg = require("../componants/Assets/bg.jpg");
 const Home = () => {
   const imagestyle = {
     width: "90%",
@@ -53,26 +54,16 @@ const Home = () => {
 
               <Box style={arrow} bg="pink"></Box>
             </Box>
-            <Heading fontSize="60px" color="white">
+            <Heading fontSize="75px" fontWeight=" 600" color="whiteSmoke">
               I'm Urvashi
             </Heading>
-            <Heading fontSize="40px" color="white">
+            <Heading fontSize="40px" color="white" fontWeight=" 300">
               Full Stack Web Developer
             </Heading>
             <Flex align="center" gap={5}>
-              <Button bg="pink" color="white">
+              <Button bg="pink" color="white" mt="5">
                 Resume
               </Button>
-              <Link
-                className="iconlink"
-                bg="white"
-                borderRadius="50%"
-                border="1px solid black"
-                fontSize="30px"
-                color="pink"
-              >
-                <BsGithub className="icon" />
-              </Link>
             </Flex>
           </Stack>
           <Box
@@ -82,12 +73,13 @@ const Home = () => {
             pt={3}
           >
             <Image
-              border=" 2px solid #c3073f"
               src={profile}
               w={["90%", "72%"]}
               h={["90%", "85%", "50%", "50%"]}
               mt={["5%", "5%", "50%", "30%"]}
-              bg="#B0B8B4FF"
+              bg="#d2cde2"
+              border="3px solid black"
+              borderRadius="5% 20% 5% 20%"
             />
           </Box>
         </Flex>

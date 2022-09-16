@@ -22,8 +22,8 @@ const cardStyle = {
   // border: "1px Solid black",
   textAlign: "left",
   padding: "5%",
-  boxShadow: " #c3073f 0px 2px 4px 0px inset",
-  backgroundColor: "rgb(166,198,197,0.2)",
+  boxShadow: " #9b37ff 0px 2px 4px 0px inset",
+  backgroundColor: "whitesmoke",
   color: "#1A1A1D",
 };
 const imgcardstyle = {
@@ -32,12 +32,15 @@ const imgcardstyle = {
 const Project = () => {
   return (
     <Box id="projects">
-      <Box m="auto" w={["50%", "40%", "30%", "15%"]}>
+      {/* <Box m="auto" w={["50%", "40%", "30%", "15%"]}>
         <Heading bg="pink" fontWeight="300" color="white">
           Projects
         </Heading>
         <Box style={arrow} bg="pink"></Box>
-      </Box>
+      </Box> */}
+      <Heading fontSize="62px" fontWeight=" 600" color="whiteSmoke">
+        PROJECTS
+      </Heading>
       <SimpleGrid
         columns={[1, 1, 1, 1, 2]}
         align="center"
