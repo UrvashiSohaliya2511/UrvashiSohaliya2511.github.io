@@ -3,7 +3,7 @@ import React from "react";
 import { arrow } from "./style/theme";
 const About = () => {
   return (
-    <Box id="about" pt={5} p={10} bg="#1a191d">
+    <Box id="about" pt={5} p={10} bg="#16161a">
       {/* <Box m="auto" w={["30%", "25%", "30%", "20%"]}> */}
       {/* <Heading fontWeight="300" color="white" bg="pink">
           About Me
@@ -19,12 +19,12 @@ const About = () => {
         color="whitesmoke"
         textAlign="justify"
         fontSize="24px"
-        w={["98%", "90%", "70%", "60%"]}
+        w={["100%", "95%", "70%", "60%"]}
         m="auto"
         mt={10}
         p={8}
         borderRadius="8px"
-        boxShadow="#9b37ff 1.95px 1.95px 2.6px"
+        boxShadow="#72757e 1.95px 1.95px 2.6px"
       >
         <Text> Hello 🙋‍♀️</Text>
         <Flex gap={3} align="center">

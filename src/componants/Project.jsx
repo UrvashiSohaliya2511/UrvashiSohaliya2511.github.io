@@ -27,7 +27,7 @@ const cardStyle = {
   color: "#1A1A1D",
 };
 const imgcardstyle = {
-  marginTop: "-130px",
+  marginTop: "-113px",
 };
 const Project = () => {
   return (
@@ -49,8 +49,8 @@ const Project = () => {
         pt={"5%"}
         pb={"5%"}
       >
-        <Box w="70%" m="auto" className="card">
-          <Stack w="100%" h={"370px"} style={cardStyle}>
+        <Box w={["100%", "90%", "73%"]} m="auto" className="card">
+          <Stack w="100%" h={"380px"} style={cardStyle}>
             <Heading fontSize="150%">NORDSTROMRACK.COM - CLONE</Heading>
             <Text>
               Nordstromrack.com is an apparel and accessories e-commerce website
@@ -90,13 +90,14 @@ const Project = () => {
             />
           </Box>
         </Box>
-        <Box w="70%" m="auto" className="card">
-          <Stack w="100%" h={"370px"} style={cardStyle}>
+        <Box w={["100%", "90%", "73%"]} m="auto" className="card">
+          <Stack w="100%" h={"380px"} style={cardStyle}>
             <Heading fontSize="150%">BESTBUY.COM - CLONE</Heading>
             <Text>
               Bestbuy.com is an e-commerce website for various electronic
               products like laptops, home appliances, etc.
             </Text>
+            <Text>Working Area : Cart functionality & Navbar</Text>
             <Text>
               Collaborative project with 6 team-members , executed in 5 days.
             </Text>

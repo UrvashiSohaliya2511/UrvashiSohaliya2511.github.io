@@ -44,9 +44,9 @@ const Home = () => {
             justify="center"
             pl={"10%"}
           >
-            <Box w={["30%", "25%", "30%", "20%"]}>
-              <Flex gap={2} bg="pink" p={1} align="center">
-                <Heading fontWeight="300" color="white">
+            <Box w={["30%", "25%", "30%", "20%"]} mt={"8%"}>
+              <Flex gap={2} bg="#7f5af0" p={1} align="center">
+                <Heading fontWeight="300" color="#fffffe">
                   Hello
                 </Heading>
                 <Heading className="hand">👋</Heading>
@@ -54,16 +54,39 @@ const Home = () => {
 
               <Box style={arrow} bg="pink"></Box>
             </Box>
-            <Heading fontSize="75px" fontWeight=" 600" color="whiteSmoke">
+            <Heading
+              fontSize={["60px", "60px", "75px"]}
+              fontWeight=" 600"
+              color="whiteSmoke"
+            >
               I'm Urvashi
             </Heading>
-            <Heading fontSize="40px" color="white" fontWeight=" 300">
+            <Heading
+              fontSize={["25px", "30px", "40px"]}
+              color="white"
+              fontWeight=" 300"
+            >
               Full Stack Web Developer
             </Heading>
             <Flex align="center" gap={5}>
-              <Button bg="pink" color="white" mt="5">
-                Resume
-              </Button>
+              <Link
+                href="https://drive.google.com/file/d/1fbJPx0eHsoJcbgDrDtKzfV84s7caBL67/view?usp=sharing"
+                target="_blank"
+              >
+                <Button
+                  bg="#7f5af0"
+                  color="#fffffe"
+                  mt="5"
+                  _hover={{
+                    bg: "whitesmoke",
+                    border: "2px solid #7f5af0",
+                    color: "#7f5af0",
+                    textDecoration: "none",
+                  }}
+                >
+                  Resume
+                </Button>
+              </Link>
             </Flex>
           </Stack>
           <Box
@@ -74,8 +97,8 @@ const Home = () => {
           >
             <Image
               src={profile}
-              w={["90%", "72%"]}
-              h={["90%", "85%", "50%", "50%"]}
+              w={["90%", "60%", "72%"]}
+              h={["80%", "70%", "50%", "50%"]}
               mt={["5%", "5%", "50%", "30%"]}
               bg="#d2cde2"
               border="3px solid black"
