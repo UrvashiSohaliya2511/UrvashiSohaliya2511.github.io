@@ -1,6 +1,7 @@
 import { Box, Text, Heading, Stack, Flex } from "@chakra-ui/react";
 import React from "react";
 import { arrow } from "./style/theme";
+
 const About = () => {
   return (
     <Box id="about" pt={5} p={10} bg="#16161a">
@@ -8,7 +9,7 @@ const About = () => {
       {/* <Heading fontWeight="300" color="white" bg="pink">
           About Me
         </Heading> */}
-      <Heading fontSize="62px" fontWeight=" 600" color="whiteSmoke">
+      <Heading fontSize="62px" fontWeight="500" color="whiteSmoke">
         ABOUT ME
       </Heading>
 

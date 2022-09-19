@@ -33,7 +33,7 @@ const Skill = () => {
         </Heading>
         <Box style={arrow} bg="pink"></Box>
       </Box> */}
-      <Heading fontSize="62px" fontWeight=" 600" color="whiteSmoke">
+      <Heading fontSize="62px" fontWeight="500" color="whiteSmoke">
         MY SKILLS
       </Heading>
       <Text color="yellow " mt="4%" fontWeight="bold">

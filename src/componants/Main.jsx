@@ -6,6 +6,7 @@ import About from "./About.jsx";
 import Project from "./Project.jsx";
 import Skill from "./Skill.jsx";
 import Navbar from "./Navbar.jsx";
+import GitHub from "./Github";
 
 const Main = () => {
   return (
@@ -15,7 +16,9 @@ const Main = () => {
         <Home />
         <About />
         <Skill />
+
         <Project />
+        <GitHub />
         <Contact />
       </Box>
     </Stack>

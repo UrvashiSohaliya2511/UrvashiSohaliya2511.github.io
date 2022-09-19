@@ -38,7 +38,7 @@ const Project = () => {
         </Heading>
         <Box style={arrow} bg="pink"></Box>
       </Box> */}
-      <Heading fontSize="62px" fontWeight=" 600" color="whiteSmoke">
+      <Heading fontSize="62px" fontWeight="500" color="whiteSmoke">
         PROJECTS
       </Heading>
       <SimpleGrid

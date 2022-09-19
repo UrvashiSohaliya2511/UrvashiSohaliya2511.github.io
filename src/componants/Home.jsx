@@ -27,7 +27,14 @@ const Home = () => {
   return (
     <>
       {" "}
-      <Stack id="home" h="100vh" mt={["-10px"]} w="100%" bg="black" pb={3}>
+      <Stack
+        id="home"
+        h={["150vh", "100vh", "100vh"]}
+        mt={["-10px"]}
+        w="100%"
+        bg="black"
+        pb={3}
+      >
         <Flex
           m="auto"
           direction={["column", "column", "row"]}
@@ -74,14 +81,16 @@ const Home = () => {
                 target="_blank"
               >
                 <Button
-                  bg="#7f5af0"
-                  color="#fffffe"
+                  bg="white"
+                  color=" #7f5af0"
                   mt="5"
+                  borderRadius="none"
+                  size="lg"
+                  border="2px solid #7f5af0"
                   _hover={{
-                    bg: "whitesmoke",
-                    border: "2px solid #7f5af0",
-                    color: "#7f5af0",
-                    textDecoration: "none",
+                    bg: "#7f5af0",
+
+                    color: "white",
                   }}
                 >
                   Resume
@@ -99,7 +108,7 @@ const Home = () => {
               src={profile}
               w={["90%", "60%", "72%"]}
               h={["80%", "70%", "50%", "50%"]}
-              mt={["5%", "5%", "50%", "30%"]}
+              mt={["5%", "5%", "50%", "33%"]}
               bg="#d2cde2"
               border="3px solid black"
               borderRadius="5% 20% 5% 20%"
