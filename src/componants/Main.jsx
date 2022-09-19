@@ -16,9 +16,9 @@ const Main = () => {
         <Home />
         <About />
         <Skill />
-
-        <Project />
         <GitHub />
+        <Project />
+
         <Contact />
       </Box>
     </Stack>

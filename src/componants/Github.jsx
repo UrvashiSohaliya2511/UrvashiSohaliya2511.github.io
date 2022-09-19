@@ -11,7 +11,7 @@ import {
 import GitHubCalendar from "react-github-calendar";
 const Github = () => {
   return (
-    <Stack id="cal" bg="#16161a" p={10}>
+    <Stack id="cal" bg="#16161a" p={"10%"}>
       <Heading fontSize="62px" fontWeight="500" color="whiteSmoke" mb={5}>
         Statistics
       </Heading>

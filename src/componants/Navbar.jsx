@@ -39,7 +39,7 @@ const Navbar = () => {
   };
 
   return (
-    <Stack style={navstyle} bg="transperent" p={2} color="#2cb67d">
+    <Stack style={navstyle} bg="rgb(0,0,0,0.4)" p={2} color="#2cb67d">
       <Show below="lg">
         <MdMenu ref={btnRef} onClick={onOpen} fontSize="25px" />
         <Drawer

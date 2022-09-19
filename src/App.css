@@ -16,6 +16,9 @@ p,
 h1 {
   animation: 3s anim-lineUp ease-out;
 }
+h2:hover {
+  color: #7f5af0;
+}
 @keyframes anim-lineUp {
   0% {
     opacity: 0;
