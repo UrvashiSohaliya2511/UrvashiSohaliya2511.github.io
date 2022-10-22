@@ -27,16 +27,16 @@ const Navbar = () => {
     transition: "top 0.3s",
     width: "100%",
   };
-  const prevPos = window.pageYOffset;
-  window.onscroll = () => {
-    const currPos = window.pageYOffset;
+  // const prevPos = window.pageYOffset;
+  // window.onscroll = () => {
+  //   const currPos = window.pageYOffset;
 
-    if (prevPos >= currPos) {
-      setstyletop("0");
-    } else {
-      setstyletop("-40px");
-    }
-  };
+  //   if (prevPos >= currPos) {
+  //     setstyletop("0");
+  //   } else {
+  //     setstyletop("-40px");
+  //   }
+  // };
 
   return (
     <Stack style={navstyle} bg="rgb(0,0,0,0.4)" p={2} color="white">

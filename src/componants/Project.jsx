@@ -31,7 +31,7 @@ const imgcardstyle = {
 };
 const Project = () => {
   return (
-    <Box id="projects">
+    <Stack id="projects" pb="5%" spacing={5}>
       {/* <Box m="auto" w={["50%", "40%", "30%", "15%"]}>
         <Heading bg="pink" fontWeight="300" color="white">
           Projects
@@ -43,9 +43,24 @@ const Project = () => {
       </Text>
       <Heading>MY PROJECTS</Heading>
       <SimpleGrid>
-        <Flex h="480px" p={4}>
-          <Image src={nord} w="50%" h="100%" objectFit="cover" />
-          <Stack w="50%" bg="#111111" p="5%" textAlign="left" spacing={5}>
+        <Flex
+          // h={["600px", "600px", "480px", "480px"]}
+          flexDirection={["column", "column", "row", "row"]}
+          p={4}
+        >
+          <Image
+            src={nord}
+            w={["100%", "100%", "50%", "50%"]}
+            h="100%"
+            objectFit="cover"
+          />
+          <Stack
+            w={["100%", "100%", "50%", "50%"]}
+            bg="#111111"
+            p="5%"
+            textAlign="left"
+            spacing={5}
+          >
             <Heading fontSize="30px" color="white">
               NORDSTROMRACK.COM - CLONE
             </Heading>
@@ -83,8 +98,24 @@ const Project = () => {
           </Stack>
         </Flex>
         {/* .................................. */}
-        <Flex h="480px" p={4}>
-          <Stack w="50%" bg="#111111" p="5%" textAlign="left" spacing={5}>
+        <Flex
+          // h={["600px", "600px", "480px", "480px"]}
+          flexDirection={["column", "column", "row", "row"]}
+          p={4}
+        >
+          <Image
+            src={bestbuy}
+            w={["100%", "100%", "50%", "50%"]}
+            h="100%"
+            objectFit="fill"
+          />
+          <Stack
+            w={["100%", "100%", "50%", "50%"]}
+            bg="#111111"
+            p="5%"
+            textAlign="left"
+            spacing={5}
+          >
             <Heading fontSize="30px" color="white">
               HELLOBONSAI -CLONE
             </Heading>
@@ -125,7 +156,6 @@ const Project = () => {
               </Button>
             </Flex>
           </Stack>
-          <Image src={bestbuy} w="50%" h="100%" objectFit="fill" />
         </Flex>
       </SimpleGrid>
       {/* <SimpleGrid
@@ -223,7 +253,7 @@ const Project = () => {
           </Box>
         </Box>
       </SimpleGrid> */}
-    </Box>
+    </Stack>
   );
 };
 
