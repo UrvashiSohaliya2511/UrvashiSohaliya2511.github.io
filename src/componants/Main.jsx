@@ -10,15 +10,15 @@ import GitHub from "./Github";
 
 const Main = () => {
   return (
-    <Stack>
+    <Stack id="main">
       <Navbar />
       <Box>
         <Home />
         <About />
         <Skill />
-        <GitHub />
-        <Project />
 
+        <Project />
+        <GitHub />
         <Contact />
       </Box>
     </Stack>

@@ -1,10 +1,7 @@
 .active {
   font-weight: bold;
-  color: white;
+  color: #bd4b4b;
 }
 a:hover {
   cursor: pointer;
-}
-.active1 {
-  color: red;
 }

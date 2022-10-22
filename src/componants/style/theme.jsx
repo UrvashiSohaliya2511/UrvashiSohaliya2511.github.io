@@ -2,10 +2,13 @@ import { extendTheme } from "@chakra-ui/react";
 
 export const theme = extendTheme({
   colors: {
-    pink: "#7f5af0",
-    lightpink: "#A16E83",
-    yellow: "#2cb67d",
-    peach: "#B19F9E",
+    pink: "#BD4B4B",
+    gray: "#919291",
+    lightgray: "#EEEEEE",
+    lightpink: "#EFB7B7",
+  },
+  sizes: {
+    basic: "25px",
   },
 });
 export const arrow = {

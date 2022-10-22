@@ -13,10 +13,12 @@ import {
   Link,
   Container,
 } from "@chakra-ui/react";
-
+import { AnimationOnScroll } from "react-animation-on-scroll";
+import { BsThreeDots } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { arrow } from "./style/theme";
-const profile = require("../componants/Assets/Profile3.png");
+import { GoTriangleRight } from "react-icons/go";
+
 const bg = require("../componants/Assets/bg.jpg");
 const Home = () => {
   const imagestyle = {
@@ -26,7 +28,43 @@ const Home = () => {
 
   return (
     <>
-      {" "}
+      <Stack id="home" bg="black" pt="13%" pb="13%" spacing={5}>
+        <Flex align="center" justify="center">
+          <Stack align="center" justify="center" spacing={5}>
+            {/* <Text color="pink">
+              <BsThreeDots />
+            </Text> */}
+
+            <Text color="gray" fontSize="24px">
+              HELLO ! I'M,
+            </Text>
+
+            <Heading color="white" fontSize={["50px", "60px", "70px", "90px"]}>
+              URVASHI SOHALIYA
+            </Heading>
+
+            <Flex
+              id="txt1"
+              color="white"
+              gap={3}
+              fontSize={["20px", "25px", "30px", "40px"]}
+            >
+              <Text>FULL STACK WEB </Text>
+              <Text id="txt">DEVELOPER</Text>
+            </Flex>
+            <Link
+              href="https://drive.google.com/file/d/1pRULwZCsuw54yPK0-eDQNN0oDaMG3hyj/view"
+              target="_blank"
+            >
+              <Button bg="pink" color="white" w="150px" borderRadius="none">
+                RESUME
+                <GoTriangleRight />
+              </Button>
+            </Link>
+          </Stack>
+        </Flex>
+      </Stack>
+      {/* {" "}
       <Stack
         id="home"
         h={["150vh", "150vh", "110vh", "100vh"]}
@@ -52,14 +90,14 @@ const Home = () => {
             pl={"10%"}
           >
             <Box w={["30%", "25%", "30%", "20%"]} mt={"8%"}>
-              <Flex gap={2} bg="#7f5af0" p={1} align="center">
+              <Flex gap={2} bg="#78d8c5" p={1} align="center">
                 <Heading fontWeight="300" color="#fffffe">
                   Hello
                 </Heading>
                 <Heading className="hand">👋</Heading>
               </Flex>
 
-              <Box style={arrow} bg="pink"></Box>
+              <Box style={arrow} bg="#78d8c5"></Box>
             </Box>
             <Heading
               fontSize={["60px", "60px", "75px"]}
@@ -82,13 +120,13 @@ const Home = () => {
               >
                 <Button
                   bg="white"
-                  color=" #7f5af0"
+                  color=" #78d8c5"
                   mt="5"
                   borderRadius="none"
                   size="lg"
-                  border="2px solid #7f5af0"
+                  border="2px solid #78d8c5"
                   _hover={{
-                    bg: "#7f5af0",
+                    bg: "#78d8c5",
 
                     color: "white",
                   }}
@@ -109,13 +147,13 @@ const Home = () => {
               w={["90%", "60%", "72%"]}
               h={["80%", "80%", "50%", "50%"]}
               mt={["5%", "5%", "50%", "33%"]}
-              bg="#d2cde2"
+              // bg="#d2cde2"
               border="3px solid black"
               borderRadius="5% 20% 5% 20%"
             />
           </Box>
         </Flex>
-      </Stack>
+      </Stack> */}
     </>
   );
 };

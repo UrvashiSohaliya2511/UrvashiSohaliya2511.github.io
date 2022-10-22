@@ -12,10 +12,10 @@ import {
 import React from "react";
 import "./style/project.css";
 import { arrow } from "./style/theme";
-
+import { FlipPage } from "react-flip-page";
 import { FaTelegramPlane, FaGithub } from "react-icons/fa";
 const nord = require("../componants/Assets/nord.png");
-const bestbuy = require("../componants/Assets/bestbuy.png");
+const bestbuy = require("../componants/Assets/bonsai.jpg");
 
 const cardStyle = {
   borderRadius: "10px",
@@ -38,11 +38,98 @@ const Project = () => {
         </Heading>
         <Box style={arrow} bg="pink"></Box>
       </Box> */}
-      <Heading fontSize="62px" fontWeight="500" color="whiteSmoke">
-        PROJECTS
-      </Heading>
-      <SimpleGrid
-        columns={[1, 1, 1, 1, 2]}
+      <Text color="gray" fontWeight="bold">
+        What i did ?
+      </Text>
+      <Heading>MY PROJECTS</Heading>
+      <SimpleGrid>
+        <Flex h="480px" p={4}>
+          <Image src={nord} w="50%" h="100%" objectFit="cover" />
+          <Stack w="50%" bg="#111111" p="5%" textAlign="left" spacing={5}>
+            <Heading fontSize="30px" color="white">
+              NORDSTROMRACK.COM - CLONE
+            </Heading>
+            <Text color="lightgray" fontSize="18px">
+              Nordstromrack.com is an apparel and accessories e-commerce website
+              that delivers an immersive and engaging shopping experience.
+            </Text>
+            <Text color="lightgray" fontSize="18px">
+              An Individual Project ,Executed in 5 days.
+            </Text>
+            <Text color="lightgray" fontSize="18px">
+              Tech Skill used : React | Chakra UI | JavaScript
+            </Text>
+            <Flex gap={3} align="center">
+              <Button size="xs" colorScheme="green">
+                <Link
+                  href="https://github.com/UrvashiSohaliya2511/gamy-part-5391"
+                  target="_blank"
+                >
+                  <Flex align="center" gap={2}>
+                    <Text> Code</Text>
+                    <FaGithub />
+                  </Flex>
+                </Link>
+              </Button>
+              <Button size="xs" colorScheme="red">
+                <Link href="https://nordstromrack.vercel.app/" target="_blank">
+                  <Flex align="center" gap={2}>
+                    <Text>Live</Text>
+                    <FaTelegramPlane />
+                  </Flex>
+                </Link>
+              </Button>
+            </Flex>
+          </Stack>
+        </Flex>
+        {/* .................................. */}
+        <Flex h="480px" p={4}>
+          <Stack w="50%" bg="#111111" p="5%" textAlign="left" spacing={5}>
+            <Heading fontSize="30px" color="white">
+              HELLOBONSAI -CLONE
+            </Heading>
+            <Text color="lightgray" fontSize="18px">
+              Hello Bonsai is a freelancing management app, It offers freelance
+              proposals and contracts. It handles your freelance invoices and
+              payments. It helps you with tracking your expenses.
+            </Text>
+            <Text color="lightgray" fontSize="18px">
+              Working Area : Dashboard and Tasks page
+            </Text>
+            <Text color="lightgray" fontSize="18px">
+              Collaborative project with 5 team-members , executed in 5 days.
+            </Text>
+            <Text color="lightgray" fontSize="18px">
+              Tech Skill used : ReactJS | NodeJS | Express | MongoDb | Chakra-UI
+              | JS | HTML| CSS
+            </Text>
+            <Flex gap={3} align="center">
+              <Button size="xs" colorScheme="green">
+                <Link
+                  href="https://github.com/PRASHANT7277/Hellobonsai-clone"
+                  target="_blank"
+                >
+                  <Flex align="center" gap={2}>
+                    <Text> Code</Text>
+                    <FaGithub />
+                  </Flex>
+                </Link>
+              </Button>
+              <Button size="xs" colorScheme="red">
+                <Link href="https://hellobonsai.vercel.app/" target="_blank">
+                  <Flex align="center" gap={2}>
+                    <Text>Live</Text>
+                    <FaTelegramPlane />
+                  </Flex>
+                </Link>
+              </Button>
+            </Flex>
+          </Stack>
+          <Image src={bestbuy} w="50%" h="100%" objectFit="fill" />
+        </Flex>
+      </SimpleGrid>
+      {/* <SimpleGrid
+        columns={[1, 1, 1, 2, 2]}
         align="center"
         justify="center"
         spacingY={10}
@@ -94,14 +181,18 @@ const Project = () => {
           <Stack w="100%" h={"380px"} style={cardStyle}>
             <Heading fontSize="150%">BESTBUY.COM - CLONE</Heading>
             <Text>
-              Bestbuy.com is an e-commerce website for various electronic
-              products like laptops, home appliances, etc.
+              Hello Bonsai is a freelancing management app, It offers freelance
+              proposals and contracts. It handles your freelance invoices and
+              payments. It helps you with tracking your expenses.
             </Text>
-            <Text>Working Area : Cart functionality & Navbar</Text>
+            <Text> Working Area : Dashboard and Tasks page</Text>
             <Text>
               Collaborative project with 6 team-members , executed in 5 days.
             </Text>
-            <Text>Tech Skill used : HTML | CSS | Javascript</Text>
+            <Text>
+              Tech Skill used : ReactJS | NodeJS | Express | MongoDb | Chakra-UI
+              | JS | HTML| CSS
+            </Text>
             <Flex gap={3} align="center">
               <Button size="xs" colorScheme="green">
                 <Link
@@ -128,17 +219,10 @@ const Project = () => {
             </Flex>
           </Stack>
           <Box w="90%" h="330px" className="imageBox" style={imgcardstyle}>
-            <Image
-              src={bestbuy}
-              w="100%"
-              h="100%"
-              pb="0"
-              objectFit="cover"
-              borderRadius="10px"
-            />
+            <Image src={bestbuy} w="100%" h="100%" pb="0" borderRadius="10px" />
           </Box>
         </Box>
-      </SimpleGrid>
+      </SimpleGrid> */}
     </Box>
   );
 };

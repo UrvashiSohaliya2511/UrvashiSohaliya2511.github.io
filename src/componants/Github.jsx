@@ -11,7 +11,7 @@ import {
 import GitHubCalendar from "react-github-calendar";
 const Github = () => {
   return (
-    <Stack id="cal" bg="#16161a" p={"10%"}>
+    <Stack id="cal" bg="#111111" p={"10%"}>
       <Heading fontSize="62px" fontWeight="500" color="whiteSmoke" mb={5}>
         Statistics
       </Heading>
@@ -51,6 +51,23 @@ const Github = () => {
           style={{ color: "white" }}
         />
       </Center>
+      {/* <Flex
+        justify="center"
+        flexDirection={["column", "column", "row"]}
+        gap="4"
+      >
+        <img
+          align="center"
+          src="https://github-readme-stats.vercel.app/api/top-langs/?username=urvashisohaliya2511&layout=compact&theme=gotham"
+          width="400"
+        />
+
+        <img
+          align="center"
+          src="https://github-readme-streak-stats.herokuapp.com?user=urvashisohaliya2511&theme=gotham"
+          width="400"
+        />
+      </Flex> */}
     </Stack>
   );
 };

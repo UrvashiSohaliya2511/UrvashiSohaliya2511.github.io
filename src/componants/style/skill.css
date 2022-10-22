@@ -1,19 +1,109 @@
 /* #skillDiv {
 } */
-#skill {
-  background-color: #16161a;
+
+#skillDo > div {
+  border: 1px dashed #efb7b7;
+  padding: 1%;
+  height: 200px;
+  font-size: 26px;
+  font-weight: bold;
 }
+#skillDo > div > p {
+  margin-top: 20%;
+}
+.hexagon {
+  cursor: default;
+  position: relative;
+  width: 150px;
+  height: 86.60254037844388px;
+  background-color: #bd4b4b;
+  margin: 43.30127018922194px auto 0 auto;
+  margin-top: -30px;
+  display: grid;
+  transition: 0s;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 106.06601717798212px;
+  height: 106.06601717798212px;
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 21.96699141100894px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0);
+  transition: 0s;
+}
+
+.hexagon:before {
+  top: -53.03300858899106px;
+}
+
+.hexagon:after {
+  bottom: -53.03300858899106px;
+}
+
+.hexagon span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 40px;
+  color: whiteSmoke;
+  top: 0px;
+  left: 0;
+  width: 150px;
+  height: 86.6025px;
+  z-index: 2;
+  background: inherit;
+  transition: 0s;
+}
+
 #skillDiv img {
   width: 70px;
   height: 70px;
   transform: rotate(0deg);
-  animation: rotate-vertical 5s ease-out infinite;
+
   font-size: 24px;
 }
-#skillDiv p {
-  font-weight: bold;
-  color: whitesmoke;
+#tech > div {
+  /* height: 100px; */
+  padding: 5%;
 }
+#tech > div:nth-child(1) {
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+}
+#tech > div:nth-child(2) {
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+}
+#tech > div:nth-child(3) {
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+}
+#tech > div:nth-child(4) {
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+}
+#tech > div:nth-child(5) {
+  border-bottom: 1px solid;
+}
+#tech > div:nth-child(6) {
+  border-right: 1px solid;
+}
+#tech > div:nth-child(7) {
+  border-right: 1px solid;
+}
+#tech > div:nth-child(8) {
+  border-right: 1px solid;
+}
+#tech > div:nth-child(9) {
+  border-right: 1px solid;
+}
+
 @keyframes rotate-vertical {
   0% {
     transform: rotateY(0deg);
