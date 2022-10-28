@@ -1,5 +1,4 @@
 import {
-  Box,
   Heading,
   Stack,
   Text,
@@ -11,8 +10,8 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import "./style/project.css";
-import { arrow } from "./style/theme";
-import { FlipPage } from "react-flip-page";
+// import { arrow } from "./style/theme";
+// import { FlipPage } from "react-flip-page";
 import { FaTelegramPlane, FaGithub } from "react-icons/fa";
 const nord = require("../componants/Assets/nord.png");
 const bestbuy = require("../componants/Assets/bonsai.jpg");
