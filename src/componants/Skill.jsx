@@ -42,19 +42,22 @@ const problemsolving = require("../componants/Assets/problem-solving.png");
 
 const Skill = () => {
   return (
-    <Stack id="skill" pt={10} pb="10%" spacing={10}>
-      <Text color="gray" fontWeight="bold">
-        MY - SKILLS
-      </Text>
-      <Heading>WHAT I DO ?</Heading>
+    <Stack id="skill" pt={10} pb="10%" spacing={["40%", "5%", "5%", "3%"]}>
+      <Stack>
+        <Text color="gray" fontWeight="bold">
+          MY - SKILLS
+        </Text>
+        <Heading>WHAT I DO ?</Heading>
+      </Stack>
       <SimpleGrid
         id="skillDo"
         align="center"
         justify="center"
         color="gray"
-        gap={"15%"}
+        rowGap={"15%"}
+        columnGap={"3%"}
         p={10}
-        columns={[1, 1, 3, 3]}
+        columns={[1, 3, 3, 3]}
       >
         <Box>
           <Box className="hexagon">
@@ -83,89 +86,91 @@ const Skill = () => {
           <Text>Data Structures & Algorithms</Text>
         </Box>
       </SimpleGrid>
-      <Text color="pink" mt="4%" fontWeight="bold">
-        TECH - SKILLS
-      </Text>
-      <SimpleGrid
-        id="skillDiv"
-        columns={[3, 3, 3, 5]}
-        align="center"
-        justify="space-evenly"
-        spacingY={12}
-        spacingX={12}
-        mt="2%"
-        fontWeight="bold"
-        color="gray"
-      >
-        <Box>
-          <Image src={html} alt="html" />
-          <Text>HTML</Text>
-        </Box>
-        <Box>
-          <Image src={css} alt="css" />
-          <Text>CSS</Text>
-        </Box>
-        <Box>
-          <Image src={js} alt="JavaScript" />
-          <Text>JavaScript</Text>
-        </Box>
-        <Box>
-          <Image src={react} alt="React" />
-          <Text>React</Text>
-        </Box>
-        <Box>
-          <Image src={mongo} alt="mongoDB" />
-          <Text>MongoDB</Text>
-        </Box>
-        <Box>
-          <Image src={redux} alt="redux" />
-          <Text>Redux</Text>
-        </Box>
-        <Box>
-          <Image src={node} alt="Node.js" />
-          <Text>NodeJS</Text>
-        </Box>
-        <Box>
-          <Image
-            src={express}
-            alt="Express.js"
-            border="1px solid white"
-            borderRadius="50%"
-          />
-          <Text>Express.js</Text>
-        </Box>
-        <Box>
-          <Image src={chakra} alt="Chakra-ui" />
-          <Text>Chakra-UI</Text>
-        </Box>
-      </SimpleGrid>
-      <Text color="pink " mt="4%" fontWeight="bold">
-        SOFT - SKILLS
-      </Text>
-      <SimpleGrid
-        id="skillDiv"
-        columns={[3, 3, 3, 3]}
-        align="center"
-        justify="space-evenly"
-        spacingY={12}
-        spacingX={12}
-        mt="2%"
-        fontWeight="bold"
-        color="gray"
-      >
-        <Box>
-          <Image src={learn} alt="mongoDB" />
-          <Text>Self Learning</Text>
-        </Box>
-        <Box>
-          <Image src={team} alt="mongoDB" />
-          <Text>Team Work</Text>
-        </Box>
-        <Box>
-          <Image src={problemsolving} alt="mongoDB" />
-          <Text>Problem Solving Mindset</Text>
-        </Box>
-      </SimpleGrid>
+      <Stack spacing="4%">
+        <Text color="pink" fontWeight="bold">
+          TECH - SKILLS
+        </Text>
+        <SimpleGrid
+          id="skillDiv"
+          columns={[2, 3, 3, 5]}
+          align="center"
+          justify="space-evenly"
+          spacingY={12}
+          spacingX={12}
+          fontWeight="bold"
+          color="gray"
+        >
+          <Box>
+            <Image src={html} alt="html" />
+            <Text>HTML</Text>
+          </Box>
+          <Box>
+            <Image src={css} alt="css" />
+            <Text>CSS</Text>
+          </Box>
+          <Box>
+            <Image src={js} alt="JavaScript" />
+            <Text>JavaScript</Text>
+          </Box>
+          <Box>
+            <Image src={react} alt="React" />
+            <Text>React</Text>
+          </Box>
+          <Box>
+            <Image src={mongo} alt="mongoDB" />
+            <Text>MongoDB</Text>
+          </Box>
+          <Box>
+            <Image src={redux} alt="redux" />
+            <Text>Redux</Text>
+          </Box>
+          <Box>
+            <Image src={node} alt="Node.js" />
+            <Text>NodeJS</Text>
+          </Box>
+          <Box>
+            <Image
+              src={express}
+              alt="Express.js"
+              border="1px solid white"
+              borderRadius="50%"
+            />
+            <Text>Express.js</Text>
+          </Box>
+          <Box>
+            <Image src={chakra} alt="Chakra-ui" />
+            <Text>Chakra-UI</Text>
+          </Box>
+        </SimpleGrid>
+
+        <Text color="pink " mt="4%" fontWeight="bold">
+          SOFT - SKILLS
+        </Text>
+        <SimpleGrid
+          id="skillDiv"
+          columns={[3, 3, 3, 3]}
+          align="center"
+          justify="space-evenly"
+          spacingY={12}
+          spacingX={12}
+          mt="2%"
+          fontWeight="bold"
+          color="gray"
+        >
+          <Box>
+            <Image src={learn} alt="mongoDB" />
+            <Text>Self Learning</Text>
+          </Box>
+          <Box>
+            <Image src={team} alt="mongoDB" />
+            <Text>Team Work</Text>
+          </Box>
+          <Box>
+            <Image src={problemsolving} alt="mongoDB" />
+            <Text>Problem Solving Mindset</Text>
+          </Box>
+        </SimpleGrid>
+      </Stack>
     </Stack>
     // <Box id="skill" pt={10} pb="10%">
     //   {/* <Box m="auto" w={["50%", "25%", "30%", "15%"]}>

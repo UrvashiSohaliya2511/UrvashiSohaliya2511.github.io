@@ -3,10 +3,10 @@
 
 #skillDo > div {
   border: 1px dashed #efb7b7;
-  padding: 1%;
-  height: 200px;
+
   font-size: 26px;
   font-weight: bold;
+  z-index: -1;
 }
 #skillDo > div > p {
   margin-top: 20%;
@@ -17,10 +17,11 @@
   width: 150px;
   height: 86.60254037844388px;
   background-color: #bd4b4b;
-  margin: 43.30127018922194px auto 0 auto;
+  /* margin: 43.30127018922194px auto 0 auto; */
   margin-top: -30px;
   display: grid;
   transition: 0s;
+  z-index: -1;
 }
 
 .hexagon:before,

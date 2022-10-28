@@ -36,7 +36,7 @@ const Project = () => {
         <Heading bg="pink" fontWeight="300" color="white">
           Projects
         </Heading>
-        <Box style={arrow} bg="pink"></Box>
+        <Box style={arrow} bg="pink"></Box>git
       </Box> */}
       <Text color="gray" fontWeight="bold">
         What i did ?
@@ -47,6 +47,7 @@ const Project = () => {
           // h={["600px", "600px", "480px", "480px"]}
           flexDirection={["column", "column", "row", "row"]}
           p={4}
+          boxShadow="rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset"
         >
           <Image
             src={nord}
@@ -102,6 +103,7 @@ const Project = () => {
           // h={["600px", "600px", "480px", "480px"]}
           flexDirection={["column", "column", "row", "row"]}
           p={4}
+          boxShadow="rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset"
         >
           <Image
             src={bestbuy}

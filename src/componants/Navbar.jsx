@@ -24,8 +24,10 @@ const Navbar = () => {
     position: "fixed",
     top: styletop,
     display: "block",
-    transition: "top 0.3s",
+    overflow: "hidden",
+    // transition: "top 0.3s",
     width: "100%",
+    zIndex: 2,
   };
   // const prevPos = window.pageYOffset;
   // window.onscroll = () => {
@@ -37,9 +39,21 @@ const Navbar = () => {
   //     setstyletop("-40px");
   //   }
   // };
-
+  const handlepdfclick = () => {
+    // fetch("../../").then((response) => {
+    //   response.blob().then((blob) => {
+    //     // Creating new object of PDF file
+    //     const fileURL = window.URL.createObjectURL(blob);
+    //     // Setting various property values
+    //     let alink = document.createElement("a");
+    //     alink.href = fileURL;
+    //     alink.download = "SamplePDF.pdf";
+    //     alink.click();
+    //   });
+    // });
+  };
   return (
-    <Stack style={navstyle} bg="rgb(0,0,0,0.4)" p={2} color="white">
+    <Stack style={navstyle} bg="black" p={2} color="white">
       <Show below="lg">
         <MdMenu ref={btnRef} onClick={onOpen} fontSize="25px" />
         <Drawer
@@ -113,6 +127,18 @@ const Navbar = () => {
             <Link activeClass="active" smooth spy to="contact">
               Contact
             </Link>
+            <Button
+              // as="link"
+              // activeClass="active"
+              // href="https://drive.google.com/file/d/1pRULwZCsuw54yPK0-eDQNN0oDaMG3hyj/view"
+              // target="_blank"
+              onClick={handlepdfclick}
+              variant="link"
+              // href="src/componants/Assets/Urvashi_Sohaliya_Resume.pdf"
+              // download
+            >
+              Resume
+            </Button>
           </Flex>
         </SimpleGrid>
       </Show>

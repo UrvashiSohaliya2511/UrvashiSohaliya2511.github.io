@@ -10,7 +10,7 @@ import GitHub from "./Github";
 
 const Main = () => {
   return (
-    <Stack id="main">
+    <Stack id="main" w="100%" overflow="hidden">
       <Navbar />
       <Box>
         <Home />

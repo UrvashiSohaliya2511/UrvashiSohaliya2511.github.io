@@ -7,12 +7,14 @@ import {
   SimpleGrid,
   Show,
   Link,
+  Img,
 } from "@chakra-ui/react";
 import React from "react";
 import { IoIosCall, IoMdMail, IoLogoLinkedin } from "react-icons/io";
 import { arrow } from "./style/theme";
 import { BsGithub } from "react-icons/bs";
 import "./style/contact.css";
+// import {} from "react-animation-on-scroll";
 const Contact = () => {
   const iconstyle = {
     borderRadius: "30% 5% 30% 5%",
@@ -24,97 +26,86 @@ const Contact = () => {
     cursor: "pointer",
   };
   return (
-    <Stack id="contact" pb={10} bg="black" spacing={5}>
+    <Stack id="contact" pb={10} pt={2} bg="black" spacing={5}>
+      {/* <Text color="pink" fontWeight="bold" textAlign="left">
+        :::
+      </Text> */}
       <Text color="gray" fontWeight="bold">
         CONTACT ME
       </Text>
       <Heading color="lightgray">Get in Touch</Heading>
-      {/* <Heading fontSize="62px" fontWeight=" 600" color="whiteSmoke">
-        CONTACT ME
-      </Heading> */}
-      {/* <Box m="auto" w={["50%", "40%", "30%", "20%"]}>
-        <Heading bg="#9b37ff" fontWeight="300" color="whitesmoke">
-          Contact Me
-        </Heading>
-        <Box style={arrow} bg="#9b37ff"></Box>
-      </Box> */}
 
-      {/* <div class="custom-shape-divider-top-1665406615">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-              class="shape-fill"
-            ></path>
-          </svg>
-        </svg>
-      </div> */}
-
-      <Flex
-        justify="space-between"
-        align="center"
-        p={3}
-        flexDirection={["column", "column", "row", "row"]}
-      >
-        <Flex
+      <SimpleGrid>
+        {/* <Flex
           fontSize="34px"
           align="center"
           justify="center"
-          gap={12}
+          gap={8}
           color="white"
-        >
-          <Box style={iconstyle} _hover={iconhover}>
+        > */}
+        <Stack w="50%" fontSize="30px" spacing={5} p={5}>
+          <Flex align="center" gap={3}>
+            <Box style={iconstyle} _hover={iconhover}>
+              <Link
+                href="https://github.com/UrvashiSohaliya2511"
+                target="_blank"
+              >
+                <BsGithub />
+              </Link>
+            </Box>
+            <Link href="https://github.com/UrvashiSohaliya2511" target="_blank">
+              <Text fontSize={["12px", "16px", "18px", "20px"]} color="gray">
+                Github
+              </Text>
+            </Link>
+          </Flex>
+          <Flex align="center" gap={3}>
+            <Box style={iconstyle} _hover={iconhover}>
+              <Link
+                href="https://www.linkedin.com/in/urvashi-sohaliya-012919235/"
+                target="_blank"
+              >
+                <IoLogoLinkedin />
+              </Link>
+            </Box>
             <Link
               href="https://www.linkedin.com/in/urvashi-sohaliya-012919235/"
               target="_blank"
             >
-              <IoLogoLinkedin />
-            </Link>
-          </Box>
-          <Box style={iconstyle} _hover={iconhover}>
-            <Link href="https://github.com/UrvashiSohaliya2511" target="_blank">
-              <BsGithub />
-            </Link>
-          </Box>
-        </Flex>
-        <SimpleGrid>
-          <Flex
-            fontSize="34px"
-            align="center"
-            justify="center"
-            gap={8}
-            color="white"
-            flexDirection={["column", "column", "row", "row"]}
-          >
-            <Flex align="center" justify="center" gap={3}>
-              <Box style={iconstyle} _hover={iconhover}>
-                <IoIosCall />
-              </Box>
-              <Text fontSize="20px" color="gray">
-                +91 6351938080
+              {" "}
+              <Text fontSize={["12px", "16px", "18px", "20px"]} color="gray">
+                Linkedin
               </Text>
-            </Flex>
-            <Flex align="center" justify="center" gap={3}>
+            </Link>
+          </Flex>
+          <Flex align="center" gap={3}>
+            <Box style={iconstyle} _hover={iconhover}>
+              <IoIosCall />
+            </Box>
+            <Text fontSize={["12px", "16px", "18px", "20px"]} color="gray">
+              +91 6351938080
+            </Text>
+          </Flex>
+          <Flex align="center" gap={3}>
+            <Link
+              href="mailto:urvashisohaliya00@gmail.com?subject = Feedback&body = Message"
+              color="white"
+            >
               <Box style={iconstyle} _hover={iconhover}>
                 <IoMdMail />
               </Box>
-              <Text fontSize="20px" color="gray">
-                urvashisohaliya00@gmail.com
-              </Text>
-            </Flex>
+            </Link>
+
+            <Text fontSize={["12px", "16px", "18px", "20px"]} color="gray">
+              urvashisohaliya00@gmail.com
+            </Text>
           </Flex>
-        </SimpleGrid>
-      </Flex>
+        </Stack>
+        <Box></Box>
+        {/* </Flex> */}
+      </SimpleGrid>
+
+      {/* <Img src="https://img.freepik.com/free-vector/flat-customer-support-illustration_23-2148899114.jpg?w=740&t=st=1666608457~exp=1666609057~hmac=cdd8f763c90e23489d52a54357ca462cd36fdc8efee07ced9207421205c6495a" /> */}
     </Stack>
   );
 };
