@@ -29,29 +29,8 @@ const Navbar = () => {
     width: "100%",
     zIndex: 2,
   };
-  // const prevPos = window.pageYOffset;
-  // window.onscroll = () => {
-  //   const currPos = window.pageYOffset;
+  const resume = require("../componants/Assets/Urvashi_Sohaliya_Resume.pdf");
 
-  //   if (prevPos >= currPos) {
-  //     setstyletop("0");
-  //   } else {
-  //     setstyletop("-40px");
-  //   }
-  // };
-  const handlepdfclick = () => {
-    // fetch("../../").then((response) => {
-    //   response.blob().then((blob) => {
-    //     // Creating new object of PDF file
-    //     const fileURL = window.URL.createObjectURL(blob);
-    //     // Setting various property values
-    //     let alink = document.createElement("a");
-    //     alink.href = fileURL;
-    //     alink.download = "SamplePDF.pdf";
-    //     alink.click();
-    //   });
-    // });
-  };
   return (
     <Stack style={navstyle} bg="black" p={2} color="white">
       <Show below="lg">
@@ -127,17 +106,13 @@ const Navbar = () => {
             <Link activeClass="active" smooth spy to="contact">
               Contact
             </Link>
-            <Button
-              // as="link"
-              // activeClass="active"
-              // href="https://drive.google.com/file/d/1pRULwZCsuw54yPK0-eDQNN0oDaMG3hyj/view"
-              // target="_blank"
-              onClick={handlepdfclick}
-              variant="link"
-              // href="src/componants/Assets/Urvashi_Sohaliya_Resume.pdf"
-              // download
-            >
-              Resume
+            <Button variant="link">
+              <a
+                href={resume}
+                // download
+              >
+                Resume
+              </a>
             </Button>
           </Flex>
         </SimpleGrid>
