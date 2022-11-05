@@ -107,10 +107,7 @@ const Navbar = () => {
               Contact
             </Link>
             <Button variant="link">
-              <a
-                href={resume}
-                // download
-              >
+              <a href={resume} download>
                 Resume
               </a>
             </Button>

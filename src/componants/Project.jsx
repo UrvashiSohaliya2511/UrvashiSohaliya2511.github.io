@@ -16,18 +16,9 @@ import { FaTelegramPlane, FaGithub } from "react-icons/fa";
 const nord = require("../componants/Assets/nord.png");
 const bonsai = require("../componants/Assets/bonsai.jpg");
 const bestbuy = require("../componants/Assets/bestbuy.png");
+const sudoku = require("../componants/Assets/sudoku.png");
 // const cardStyle = {
-//   borderRadius: "10px",
-//   // border: "1px Solid black",
-//   textAlign: "left",
-//   padding: "5%",
-//   boxShadow: " #9b37ff 0px 2px 4px 0px inset",
-//   backgroundColor: "whitesmoke",
-//   color: "#1A1A1D",
-// };
-// const imgcardstyle = {
-//   marginTop: "-113px",
-// };
+
 const Project = () => {
   return (
     <Stack id="projects" pb="5%" spacing={5}>
@@ -219,7 +210,7 @@ const Project = () => {
             </Flex>
           </Stack>
         </Flex>
-        {/* 
+
         <Flex
           // h={["600px", "600px", "480px", "480px"]}
           flexDirection={["column", "column", "row", "row"]}
@@ -227,10 +218,10 @@ const Project = () => {
           boxShadow="rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset"
         >
           <Image
-            src={bestbuy}
+            src={sudoku}
             w={["100%", "100%", "50%", "50%"]}
             h="100%"
-            objectFit="fill"
+            objectFit="cover"
           />
           <Stack
             w={["100%", "100%", "50%", "50%"]}
@@ -240,25 +231,26 @@ const Project = () => {
             spacing={5}
           >
             <Heading fontSize="30px" color="white">
-              BESTBUY.COM - CLONE
+              MINI_SUDOKU-GAME
             </Heading>
             <Text color="lightgray" fontSize="18px">
-              Bestbuy.com is an e-commerce website for various electronic
-              products like laptops, home appliances, etc.
+              It is a Mini sudoku game in which player can solve puzzles in
+              different levels and it gives instant varification through
+              different color-ui of number is at correct position or not.
             </Text>
             <Text color="lightgray" fontSize="18px">
-              Working Area : Cart functionality & Navbar
+              Features : solve | verify | reset | view ans
             </Text>
             <Text color="lightgray" fontSize="18px">
-              Collaborative project with 6 team-members , executed in 5 days.
+              An Individual Project ,Executed in 5 days.
             </Text>
             <Text color="lightgray" fontSize="18px">
-              Tech Skill used : HTML | CSS | Javascript
+              Tech Skill used : React | Javascript | HTML | CSS
             </Text>
             <Flex gap={3} align="center">
               <Button size="xs" colorScheme="green">
                 <Link
-                  href="https://github.com/UrvashiSohaliya2511/Bestbuy"
+                  href="https://github.com/UrvashiSohaliya2511/Sudoku"
                   target="_blank"
                 >
                   <Flex align="center" gap={2}>
@@ -268,10 +260,7 @@ const Project = () => {
                 </Link>
               </Button>
               <Button size="xs" colorScheme="red">
-                <Link
-                  href="https://normal-ducks-2238-urvashisohaliya2511.vercel.app/"
-                  target="_blank"
-                >
+                <Link href="https://sudoku-psi.vercel.app/" target="_blank">
                   <Flex align="center" gap={2}>
                     <Text>Live</Text>
                     <FaTelegramPlane />
@@ -280,7 +269,7 @@ const Project = () => {
               </Button>
             </Flex>
           </Stack>
-        </Flex> */}
+        </Flex>
       </SimpleGrid>
     </Stack>
   );
