@@ -10,6 +10,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import "./style/project.css";
+import AOS from "aos";
 // import { arrow } from "./style/theme";
 // import { FlipPage } from "react-flip-page";
 import { FaTelegramPlane, FaGithub } from "react-icons/fa";
@@ -20,6 +21,9 @@ const sudoku = require("../componants/Assets/sudoku.png");
 // const cardStyle = {
 
 const Project = () => {
+  React.useEffect(() => {
+    AOS.init({ offset: 300, duration: 1000 });
+  }, []);
   return (
     <Stack id="projects" pb="5%" spacing={5}>
       {/* <Box m="auto" w={["50%", "40%", "30%", "15%"]}>
@@ -44,6 +48,7 @@ const Project = () => {
             w={["100%", "100%", "50%", "50%"]}
             h="100%"
             objectFit="cover"
+            data-aos="fade-left"
           />
           <Stack
             w={["100%", "100%", "50%", "50%"]}
@@ -51,6 +56,7 @@ const Project = () => {
             p="5%"
             textAlign="left"
             spacing={5}
+            data-aos="fade-right"
           >
             <Heading fontSize="30px" color="white">
               NORDSTROMRACK.COM - CLONE
@@ -100,6 +106,7 @@ const Project = () => {
             w={["100%", "100%", "50%", "50%"]}
             h="100%"
             objectFit="fill"
+            data-aos="fade-left"
           />
           <Stack
             w={["100%", "100%", "50%", "50%"]}
@@ -107,6 +114,7 @@ const Project = () => {
             p="5%"
             textAlign="left"
             spacing={5}
+            data-aos="fade-right"
           >
             <Heading fontSize="30px" color="white">
               HELLOBONSAI -CLONE
@@ -160,6 +168,7 @@ const Project = () => {
             w={["100%", "100%", "50%", "50%"]}
             h="100%"
             objectFit="fill"
+            data-aos="fade-left"
           />
           <Stack
             w={["100%", "100%", "50%", "50%"]}
@@ -167,6 +176,7 @@ const Project = () => {
             p="5%"
             textAlign="left"
             spacing={5}
+            data-aos="fade-right"
           >
             <Heading fontSize="30px" color="white">
               BESTBUY.COM - CLONE
@@ -222,6 +232,7 @@ const Project = () => {
             w={["100%", "100%", "50%", "50%"]}
             h="100%"
             objectFit="cover"
+            data-aos="fade-left"
           />
           <Stack
             w={["100%", "100%", "50%", "50%"]}
@@ -229,6 +240,7 @@ const Project = () => {
             p="5%"
             textAlign="left"
             spacing={5}
+            data-aos="fade-right"
           >
             <Heading fontSize="30px" color="white">
               MINI_SUDOKU-GAME

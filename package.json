@@ -11,6 +11,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
     "bootstrap": "^5.2.2",
     "framer-motion": "^7.3.2",
     "github-calendar": "^2.3.1",

@@ -12,10 +12,12 @@ import {
   useDisclosure,
   Show,
   Hide,
+  Text,
 } from "@chakra-ui/react";
 import { MdMenu } from "react-icons/md";
 import { Link } from "react-scroll";
 import "../componants/style/nav.css";
+import { FiDownload } from "react-icons/fi";
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
@@ -108,7 +110,10 @@ const Navbar = () => {
             </Link>
             <Button variant="link">
               <a href={resume} download>
-                Resume
+                <Flex>
+                  <Text>Resume</Text>
+                  <FiDownload />
+                </Flex>
               </a>
             </Button>
           </Flex>

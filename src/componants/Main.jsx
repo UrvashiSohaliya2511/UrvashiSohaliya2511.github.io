@@ -7,8 +7,13 @@ import Project from "./Project.jsx";
 import Skill from "./Skill.jsx";
 import Navbar from "./Navbar.jsx";
 import GitHub from "./Github";
+import AOS from "aos";
 
 const Main = () => {
+  React.useEffect(() => {
+    AOS.init({ offset: 300, duration: 1000 });
+  }, []);
+
   return (
     <Stack id="main" w="100%" overflow="hidden">
       <Navbar />

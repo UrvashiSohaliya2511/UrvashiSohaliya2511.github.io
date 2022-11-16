@@ -10,6 +10,8 @@ import {
 import React from "react";
 import "./style/skill.css";
 import { AiFillHtml5 } from "react-icons/ai";
+import AOS from "aos";
+
 import {
   SiCss3,
   SiJavascript,
@@ -41,6 +43,10 @@ const team = require("../componants/Assets/networking.png");
 const problemsolving = require("../componants/Assets/problem-solving.png");
 
 const Skill = () => {
+  React.useEffect(() => {
+    AOS.init({ offset: 300, duration: 1000 });
+  }, []);
+
   return (
     <Stack id="skill" pt={10} pb="10%" spacing={["40%", "5%", "5%", "3%"]}>
       <Stack>
@@ -59,7 +65,7 @@ const Skill = () => {
         p={10}
         columns={[1, 3, 3, 3]}
       >
-        <Box>
+        <Box data-aos="zoom-in">
           <Box className="hexagon">
             <span>
               <SiFrontendmentor />
@@ -67,7 +73,7 @@ const Skill = () => {
           </Box>
           <Text>Front-End Development </Text>
         </Box>
-        <Box>
+        <Box data-aos="zoom-in">
           <Box className="hexagon">
             <span>
               <FiDatabase />
@@ -76,7 +82,7 @@ const Skill = () => {
 
           <Text>Back-End Development</Text>
         </Box>
-        <Box>
+        <Box data-aos="zoom-in">
           <Box className="hexagon">
             <span>
               <BsPuzzle />
@@ -100,35 +106,60 @@ const Skill = () => {
           fontWeight="bold"
           color="gray"
         >
-          <Box>
+          <Box
+            data-aos="fade-up
+"
+          >
             <Image src={html} alt="html" />
             <Text>HTML</Text>
           </Box>
-          <Box>
+          <Box
+            data-aos="fade-up
+"
+          >
             <Image src={css} alt="css" />
             <Text>CSS</Text>
           </Box>
-          <Box>
+          <Box
+            data-aos="fade-up
+"
+          >
             <Image src={js} alt="JavaScript" />
             <Text>JavaScript</Text>
           </Box>
-          <Box>
+          <Box
+            data-aos="fade-up
+"
+          >
             <Image src={react} alt="React" />
             <Text>React</Text>
           </Box>
-          <Box>
+          <Box
+            data-aos="fade-up
+"
+          >
             <Image src={mongo} alt="mongoDB" />
             <Text>MongoDB</Text>
           </Box>
-          <Box>
+          <Box
+            data-aos="fade-up
+
+"
+          >
             <Image src={redux} alt="redux" />
             <Text>Redux</Text>
           </Box>
-          <Box>
+          <Box
+            data-aos="fade-up
+"
+          >
             <Image src={node} alt="Node.js" />
             <Text>NodeJS</Text>
           </Box>
-          <Box>
+          <Box
+            data-aos="fade-up
+"
+          >
             <Image
               src={express}
               alt="Express.js"
@@ -137,7 +168,10 @@ const Skill = () => {
             />
             <Text>Express.js</Text>
           </Box>
-          <Box>
+          <Box
+            data-aos="fade-up
+"
+          >
             <Image src={chakra} alt="Chakra-ui" />
             <Text>Chakra-UI</Text>
           </Box>
@@ -158,104 +192,35 @@ const Skill = () => {
           color="gray"
         >
           <Box>
-            <Image src={learn} alt="mongoDB" />
+            <Image
+              src={learn}
+              alt="mongoDB"
+              data-aos="fade-up
+"
+            />
             <Text>Self Learning</Text>
           </Box>
           <Box>
-            <Image src={team} alt="mongoDB" />
+            <Image
+              src={team}
+              alt="mongoDB"
+              data-aos="fade-up
+"
+            />
             <Text>Team Work</Text>
           </Box>
           <Box>
-            <Image src={problemsolving} alt="mongoDB" />
+            <Image
+              src={problemsolving}
+              alt="mongoDB"
+              data-aos="fade-up
+"
+            />
             <Text>Problem Solving Mindset</Text>
           </Box>
         </SimpleGrid>
       </Stack>
     </Stack>
-    // <Box id="skill" pt={10} pb="10%">
-    //   {/* <Box m="auto" w={["50%", "25%", "30%", "15%"]}>
-    //     <Heading bg="pink" fontWeight="300" color="white" p={1}>
-    //       My Skills
-    //     </Heading>
-    //     <Box style={arrow} bg="pink"></Box>
-    //   </Box> */}
-    //   <Heading fontSize="62px" fontWeight="500" color="whiteSmoke">
-    //     MY SKILLS
-    //   </Heading>
-    //   <Text color="yellow " mt="4%" fontWeight="bold">
-    //     TECH - SKILLS
-    //   </Text>
-    //   <SimpleGrid
-    //     id="skillDiv"
-    //     columns={[2, 2, 3, 3]}
-    //     align="center"
-    //     justify="space-evenly"
-    //     spacingY={12}
-    //     spacingX={12}
-    //     mt="2%"
-    //   >
-    //     {/* <Box>
-    //       <Image src={dsa} alt="html" />
-    //       <Text>Data structure</Text>
-    //       <Text>and algorithms</Text>
-    //     </Box> */}
-
-    //     <Box>
-    //       <Image src={html} alt="html" />
-    //       <Text>HTML</Text>
-    //     </Box>
-    //     <Box>
-    //       <Image src={css} alt="css" />
-    //       <Text>CSS</Text>
-    //     </Box>
-    //     <Box>
-    //       <Image src={js} alt="JavaScript" />
-    //       <Text>JavaScript</Text>
-    //     </Box>
-    //     <Box>
-    //       <Image src={react} alt="React" />
-    //       <Text>React</Text>
-    //     </Box>
-    //     <Box>
-    //       <Image src={mongo} alt="mongoDB" />
-    //       <Text>MongoDB</Text>
-    //     </Box>
-    //     <Box>
-    //       <Image src={redux} alt="redux" />
-    //       <Text>Redux</Text>
-    //     </Box>
-    //     <Box>
-    //       <Image src={node} alt="Node.js" />
-    //       <Text>NodeJS</Text>
-    //     </Box>
-    //     <Box>
-    //       <Image
-    //         src={express}
-    //         alt="Express.js"
-    //         border="1px solid white"
-    //         borderRadius="50%"
-    //         bg="whitesmoke"
-    //       />
-    //       <Text>Express.js</Text>
-    //     </Box>
-    //     <Box>
-    //       <Image src={chakra} alt="Chakra-ui" />
-    //       <Text>Chakra-UI</Text>
-    //     </Box>
-    //   </SimpleGrid>
-
-    //   <Flex id="skillDiv" align="center" justify="center" gap={3} mt={10}>
-    //     <Image src={dsa} alt="mongoDB" />
-    //     <Box>
-    //       <Text>DATA STRUCTURE</Text>
-    //       <Text> AND ALGORITHMS</Text>
-    //     </Box>
-    //   </Flex>
-    //   <Text mt="4%" color="yellow" fontWeight="bold">
-    //     SOFT - SKILLS
-    //   </Text>
-
-    // </Box>
   );
 };
 

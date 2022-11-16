@@ -1,22 +1,17 @@
 import React from "react";
 import "./style/home.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import {
-  Image,
   Stack,
-  SimpleGrid,
-  Box,
   Heading,
   Flex,
   Text,
   Tooltip,
   Button,
   Link,
-  Container,
 } from "@chakra-ui/react";
-import { AnimationOnScroll } from "react-animation-on-scroll";
-import { BsThreeDots } from "react-icons/bs";
-import { BsGithub } from "react-icons/bs";
-import { arrow } from "./style/theme";
+
 import { GoTriangleRight } from "react-icons/go";
 
 const bg = require("../componants/Assets/bg.jpg");
@@ -25,6 +20,10 @@ const Home = () => {
     width: "90%",
     height: "65%",
   };
+
+  React.useEffect(() => {
+    AOS.init({ offset: 300, duration: 1000 });
+  }, []);
 
   return (
     <>
@@ -35,7 +34,12 @@ const Home = () => {
               <BsThreeDots />
             </Text> */}
 
-            <Text color="gray" fontSize="24px">
+            <Text
+              color="gray"
+              fontSize="24px"
+              data-aos="zoom-out
+"
+            >
               HELLO ! I'M,
             </Text>
 
@@ -49,14 +53,22 @@ const Home = () => {
               gap={3}
               fontSize={["20px", "25px", "30px", "40px"]}
             >
-              <Text>FULL STACK WEB </Text>
-              <Text id="txt">DEVELOPER</Text>
+              <Text data-aos="ease-out-sine">FULL STACK WEB </Text>
+              <Text id="txt" data-aos="ease-out-sine">
+                DEVELOPER
+              </Text>
             </Flex>
             <Link
               href="https://drive.google.com/file/d/1pRULwZCsuw54yPK0-eDQNN0oDaMG3hyj/view"
               target="_blank"
             >
-              <Button bg="pink" color="white" w="150px" borderRadius="none">
+              <Button
+                bg="pink"
+                color="white"
+                w="150px"
+                borderRadius="none"
+                data-aos="ease-out-sine"
+              >
                 RESUME
                 <GoTriangleRight />
               </Button>

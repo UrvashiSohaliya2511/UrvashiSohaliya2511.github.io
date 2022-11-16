@@ -10,7 +10,11 @@ import {
   Img,
 } from "@chakra-ui/react";
 import GitHubCalendar from "react-github-calendar";
+import AOS from "aos";
 const Github = () => {
+  React.useEffect(() => {
+    AOS.init({ offset: 300, duration: 1000 });
+  }, []);
   return (
     <Stack id="cal" bg="#111111" p={"10%"}>
       <Heading
@@ -26,7 +30,7 @@ const Github = () => {
         color="whiteSmoke"
         columns={[3, 3, 5, 5]}
       >
-        <Box align="center">
+        <Box align="center" data-aos="zoom-in">
           <Heading color="#2cb67d" fontSize={["18px", "24px", "26px", "35px"]}>
             1200+
           </Heading>
@@ -34,14 +38,14 @@ const Github = () => {
             hours of coding
           </Text>
         </Box>
-        <Box>
+        <Box data-aos="zoom-in">
           <Heading color="#2cb67d" fontSize={["18px", "24px", "26px", "35px"]}>
             500+
           </Heading>
           <Text fontSize={["11px", "13px", "15px", "17px"]}>hours of DSA</Text>
         </Box>
 
-        <Box>
+        <Box data-aos="zoom-in">
           <Heading color="#2cb67d" fontSize={["18px", "24px", "26px", "35px"]}>
             6
           </Heading>
@@ -49,7 +53,7 @@ const Github = () => {
             Months of Training
           </Text>
         </Box>
-        <Box>
+        <Box data-aos="zoom-in">
           <Heading color="#2cb67d" fontSize={["18px", "24px", "26px", "35px"]}>
             3
           </Heading>
@@ -57,7 +61,7 @@ const Github = () => {
             Projects Completed
           </Text>
         </Box>
-        <Box w="80%">
+        <Box w="80%" data-aos="zoom-in">
           <Heading color="#2cb67d" fontSize={["18px", "24px", "26px", "35px"]}>
             6
           </Heading>
@@ -73,12 +77,19 @@ const Github = () => {
         <GitHubCalendar
           username="urvashisohaliya2511"
           style={{ color: "white" }}
+          data-aos="zoom-in"
         />
       </Center>
 
       <SimpleGrid columns={2} spacing={5} align="center" justify="center">
-        <Img src="https://github-readme-stats.vercel.app/api?username=Urvashisohaliya2511&theme=gotham&hide_border=false&include_all_commits=false&count_private=false&show_icons=true" />
-        <Img src="https://github-readme-streak-stats.herokuapp.com/?user=Urvashisohaliya2511&theme=gotham&hide_border=false" />
+        <Img
+          src="https://github-readme-stats.vercel.app/api?username=Urvashisohaliya2511&theme=gotham&hide_border=false&include_all_commits=false&count_private=false&show_icons=true"
+          data-aos="zoom-in"
+        />
+        <Img
+          src="https://github-readme-streak-stats.herokuapp.com/?user=Urvashisohaliya2511&theme=gotham&hide_border=false"
+          data-aos="zoom-in"
+        />
       </SimpleGrid>
     </Stack>
   );
