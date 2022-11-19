@@ -27,7 +27,7 @@ const Home = () => {
 
   return (
     <>
-      <Stack id="home" bg="black" pt="13%" pb="13%" spacing={5} h="100vh">
+      <Stack id="home" bg="black" pt="13%" pb="13%" spacing={5}>
         <Flex align="center" justify="center">
           <Stack align="center" justify="center" spacing={5}>
             {/* <Text color="pink">

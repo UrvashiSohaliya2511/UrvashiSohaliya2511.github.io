@@ -39,7 +39,7 @@ const Navbar = () => {
         <MdMenu ref={btnRef} onClick={onOpen} fontSize="25px" />
         <Drawer
           isOpen={isOpen}
-          placement="right"
+          placement="left"
           onClose={onClose}
           finalFocusRef={btnRef}
           size="xs"
@@ -73,6 +73,14 @@ const Navbar = () => {
                 <Link activeClass="active1" smooth spy to="contact">
                   Contact
                 </Link>
+                <Button variant="link">
+                  <a href={resume} download>
+                    <Flex>
+                      <Text>Resume</Text>
+                      <FiDownload />
+                    </Flex>
+                  </a>
+                </Button>
               </Flex>
             </SimpleGrid>
           </DrawerContent>
