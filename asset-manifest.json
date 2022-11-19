@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.00b7961a.css",
-    "main.js": "/static/js/main.bd23889a.js",
+    "main.js": "/static/js/main.797286dd.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/nord.png": "/static/media/nord.b13bf6af60ea6fb8a157.png",
     "static/media/bestbuy.png": "/static/media/bestbuy.e1d859eba0e5d7baadd6.png",
@@ -21,11 +21,11 @@
     "static/media/js.png": "/static/media/js.3dfb665e058d08c99f28.png",
     "index.html": "/index.html",
     "main.00b7961a.css.map": "/static/css/main.00b7961a.css.map",
-    "main.bd23889a.js.map": "/static/js/main.bd23889a.js.map",
+    "main.797286dd.js.map": "/static/js/main.797286dd.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.00b7961a.css",
-    "static/js/main.bd23889a.js"
+    "static/js/main.797286dd.js"
   ]
 }
