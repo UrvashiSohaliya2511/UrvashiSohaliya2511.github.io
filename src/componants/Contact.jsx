@@ -14,6 +14,7 @@ import { IoIosCall, IoMdMail, IoLogoLinkedin } from "react-icons/io";
 import { arrow } from "./style/theme";
 import { BsGithub } from "react-icons/bs";
 import "./style/contact.css";
+import AOS from "aos";
 // import {} from "react-animation-on-scroll";
 const Contact = () => {
   const iconstyle = {
@@ -25,15 +26,20 @@ const Contact = () => {
   const iconhover = {
     cursor: "pointer",
   };
+  React.useEffect(() => {
+    AOS.init({ offset: 50, duration: 1000 });
+  }, []);
   return (
     <Stack id="contact" pb={10} pt={2} bg="black" spacing={5}>
       {/* <Text color="pink" fontWeight="bold" textAlign="left">
         :::
       </Text> */}
-      <Text color="gray" fontWeight="bold">
+      <Text color="gray" fontWeight="bold" data-aos="zoom-in">
         CONTACT ME
       </Text>
-      <Heading color="lightgray">Get in Touch</Heading>
+      <Heading color="lightgray" data-aos="zoom-in">
+        Get in Touch
+      </Heading>
 
       <SimpleGrid>
         {/* <Flex
@@ -45,7 +51,7 @@ const Contact = () => {
         > */}
         <Stack w="50%" fontSize="30px" spacing={5} p={5}>
           <Flex align="center" gap={3}>
-            <Box style={iconstyle} _hover={iconhover}>
+            <Box style={iconstyle} _hover={iconhover} data-aos="zoom-in">
               <Link
                 href="https://github.com/UrvashiSohaliya2511"
                 target="_blank"
@@ -54,13 +60,17 @@ const Contact = () => {
               </Link>
             </Box>
             <Link href="https://github.com/UrvashiSohaliya2511" target="_blank">
-              <Text fontSize={["12px", "16px", "18px", "20px"]} color="gray">
+              <Text
+                fontSize={["12px", "16px", "18px", "20px"]}
+                color="gray"
+                data-aos="zoom-in"
+              >
                 Github
               </Text>
             </Link>
           </Flex>
           <Flex align="center" gap={3}>
-            <Box style={iconstyle} _hover={iconhover}>
+            <Box style={iconstyle} _hover={iconhover} data-aos="zoom-in">
               <Link
                 href="https://www.linkedin.com/in/urvashi-sohaliya-012919235/"
                 target="_blank"
@@ -73,16 +83,24 @@ const Contact = () => {
               target="_blank"
             >
               {" "}
-              <Text fontSize={["12px", "16px", "18px", "20px"]} color="gray">
+              <Text
+                fontSize={["12px", "16px", "18px", "20px"]}
+                color="gray"
+                data-aos="zoom-in"
+              >
                 Linkedin
               </Text>
             </Link>
           </Flex>
           <Flex align="center" gap={3}>
-            <Box style={iconstyle} _hover={iconhover}>
+            <Box style={iconstyle} _hover={iconhover} data-aos="zoom-in">
               <IoIosCall />
             </Box>
-            <Text fontSize={["12px", "16px", "18px", "20px"]} color="gray">
+            <Text
+              fontSize={["12px", "16px", "18px", "20px"]}
+              color="gray"
+              data-aos="zoom-in"
+            >
               +91 6351938080
             </Text>
           </Flex>
@@ -91,12 +109,16 @@ const Contact = () => {
               href="mailto:urvashisohaliya00@gmail.com?subject = Feedback&body = Message"
               color="white"
             >
-              <Box style={iconstyle} _hover={iconhover}>
+              <Box style={iconstyle} _hover={iconhover} data-aos="zoom-in">
                 <IoMdMail />
               </Box>
             </Link>
 
-            <Text fontSize={["12px", "16px", "18px", "20px"]} color="gray">
+            <Text
+              fontSize={["12px", "16px", "18px", "20px"]}
+              color="gray"
+              data-aos="zoom-in"
+            >
               urvashisohaliya00@gmail.com
             </Text>
           </Flex>

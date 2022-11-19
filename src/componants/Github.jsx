@@ -73,11 +73,10 @@ const Github = () => {
       <Text color="#2cb67d" fontWeight="bold" textDecoration="underline">
         MY CONTRIBUTIONS
       </Text>
-      <Center m="auto" align="center" p={10}>
+      <Center m="auto" align="center" p={10} data-aos="zoom-in">
         <GitHubCalendar
           username="urvashisohaliya2511"
           style={{ color: "white" }}
-          data-aos="zoom-in"
         />
       </Center>
 

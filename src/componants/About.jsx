@@ -2,15 +2,19 @@ import { Box, Text, Heading, Stack, Flex, Img } from "@chakra-ui/react";
 import React from "react";
 import { arrow } from "./style/theme";
 import "./style/about.css";
+import AOS from "aos";
 import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
 const profile = require("../componants/Assets/Profile3.png");
 const About = () => {
+  React.useEffect(() => {
+    AOS.init({ offset: 300, duration: 1000 });
+  }, []);
   return (
     <Stack id="about" pt="8%" pb="8%" bg="lightgray">
-      <Text color="gray" fontWeight="bold">
+      <Text color="gray" fontWeight="bold" data-aos="zoom-in">
         ABOUT ME
       </Text>
-      <Heading>WHO AM I ?</Heading>
+      <Heading data-aos="zoom-in">WHO AM I ?</Heading>
       <Flex
         h="95%"
         align="center"
@@ -26,20 +30,27 @@ const About = () => {
               color="lightpink"
               mr="99%"
               mb="3%"
+              data-aos="zoom-in"
             >
               <ImQuotesLeft />
             </Text>
-            <Text> Hello !🙋‍♀️</Text>
+            <Text data-aos="zoom-in"> Hello !🙋‍♀️</Text>
 
-            <Text>As you know I'm Urvashi Sohaliya.</Text>
+            <Text data-aos="zoom-in">As you know I'm Urvashi Sohaliya.</Text>
 
-            <Text>
+            <Text data-aos="zoom-in">
               I am Full Stack Web Developer , Having knowledge of MERN Stack
               technology . Collaborative , Proficient in working in team and
               executing goal orianted projects. Looking forward to applying and
               enhancing my skills and knowledge as a developer.
             </Text>
-            <Text fontSize="40px" textAlign="center" color="lightpink" ml="90%">
+            <Text
+              fontSize="40px"
+              textAlign="center"
+              color="lightpink"
+              ml="90%"
+              data-aos="zoom-in"
+            >
               <ImQuotesRight />
             </Text>
           </Box>
@@ -50,6 +61,7 @@ const About = () => {
           bg="rgb(247, 224, 224,0.5)"
           borderRadius="5%"
           boxShadow="rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px"
+          data-aos="zoom-in"
         />
       </Flex>
     </Stack>
