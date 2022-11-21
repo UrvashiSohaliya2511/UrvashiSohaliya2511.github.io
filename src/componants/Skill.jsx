@@ -43,9 +43,9 @@ const team = require("../componants/Assets/networking.png");
 const problemsolving = require("../componants/Assets/problem-solving.png");
 
 const Skill = () => {
-  React.useEffect(() => {
-    AOS.init({ offset: 300, duration: 1000 });
-  }, []);
+  // React.useEffect(() => {
+  //   AOS.init({ offset: 300, duration: 1000 });
+  // }, []);
 
   return (
     <Stack id="skill" pt={10} pb="10%" spacing={["40%", "5%", "5%", "3%"]}>
