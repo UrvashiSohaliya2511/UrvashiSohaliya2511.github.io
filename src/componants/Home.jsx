@@ -22,7 +22,7 @@ const Home = () => {
   };
 
   React.useEffect(() => {
-    AOS.init({ offset: 150, duration: 1000 });
+    AOS.init({ offset: 300, duration: 1000 });
   }, []);
 
   return (
