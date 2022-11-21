@@ -21,9 +21,9 @@ const Home = () => {
     height: "65%",
   };
 
-  React.useEffect(() => {
-    AOS.init({ offset: 300, duration: 1000 });
-  }, []);
+  // React.useEffect(() => {
+  //   AOS.init({ offset: 300, duration: 1000 });
+  // }, []);
 
   return (
     <>
@@ -51,7 +51,6 @@ const Home = () => {
               color="white"
               gap={3}
               fontSize={["20px", "25px", "30px", "40px"]}
-              data-aos="zoom-in"
             >
               <Text data-aos="ease-out-sine">FULL STACK WEB </Text>
               <Text id="txt">DEVELOPER</Text>
@@ -60,13 +59,7 @@ const Home = () => {
               href="https://drive.google.com/file/d/1pRULwZCsuw54yPK0-eDQNN0oDaMG3hyj/view"
               target="_blank"
             >
-              <Button
-                bg="pink"
-                color="white"
-                w="150px"
-                borderRadius="none"
-                data-aos="zoom-in"
-              >
+              <Button bg="pink" color="white" w="150px" borderRadius="none">
                 RESUME
                 <GoTriangleRight />
               </Button>
