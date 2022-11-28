@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.00b7961a.css",
-    "main.js": "/static/js/main.571d8f6d.js",
+    "main.js": "/static/js/main.e22355d8.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/nord.png": "/static/media/nord.b13bf6af60ea6fb8a157.png",
     "static/media/bestbuy.png": "/static/media/bestbuy.e1d859eba0e5d7baadd6.png",
     "static/media/Profile3.png": "/static/media/Profile3.d61afdf11c1468e9a7a8.png",
-    "static/media/Urvashi_Sohaliya_Resume.pdf": "/static/media/Urvashi_Sohaliya_Resume.86e6b955bc393f03f6ee.pdf",
+    "static/media/Urvashi_Sohaliya_Resume.pdf": "/static/media/Urvashi_Sohaliya_Resume.07edb4fcc71f7db72f13.pdf",
     "static/media/bonsai.jpg": "/static/media/bonsai.bed924c620f57892edee.jpg",
     "static/media/sudoku.png": "/static/media/sudoku.4122a0a9dfc706b20aa6.png",
     "static/media/express.png": "/static/media/express.54da65dbcbf0726f46ac.png",
@@ -21,11 +21,11 @@
     "static/media/js.png": "/static/media/js.3dfb665e058d08c99f28.png",
     "index.html": "/index.html",
     "main.00b7961a.css.map": "/static/css/main.00b7961a.css.map",
-    "main.571d8f6d.js.map": "/static/js/main.571d8f6d.js.map",
+    "main.e22355d8.js.map": "/static/js/main.e22355d8.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.00b7961a.css",
-    "static/js/main.571d8f6d.js"
+    "static/js/main.e22355d8.js"
   ]
 }
