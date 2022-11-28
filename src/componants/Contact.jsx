@@ -18,19 +18,22 @@ import AOS from "aos";
 // import {} from "react-animation-on-scroll";
 const Contact = () => {
   const iconstyle = {
-    borderRadius: "30% 5% 30% 5%",
-    backgroundColor: "whitesmoke",
-    color: "black",
+    // borderRadius: "30% 5% 30% 5%",
+    // backgroundColor: "whitesmoke",
+    color: "white",
     padding: 3,
   };
   const iconhover = {
+    borderRadius: "30% 5% 30% 5%",
+    backgroundColor: "#BD4B4B",
+    color: "black",
     cursor: "pointer",
   };
   React.useEffect(() => {
-    AOS.init({ offset: 0, duration: 1000 });
+    AOS.init({ offset: 150, duration: 1000 });
   }, []);
   return (
-    <Stack id="contact" pb={10} pt={2} bg="black" spacing={5}>
+    <Stack id="contact" pb={10} pt={10} bg="black" spacing={5}>
       {/* <Text color="pink" fontWeight="bold" textAlign="left">
         :::
       </Text> */}
@@ -41,91 +44,120 @@ const Contact = () => {
         Get in Touch
       </Heading>
 
-      <SimpleGrid>
-        {/* <Flex
+      {/* <SimpleGrid> */}
+      {/* <Flex
           fontSize="34px"
           align="center"
           justify="center"
           gap={8}
           color="white"
         > */}
-        <Stack w="50%" fontSize="30px" spacing={5} p={5}>
-          <Flex align="center" gap={3}>
-            <Box style={iconstyle} _hover={iconhover} data-aos="zoom-in">
-              <Link
-                href="https://github.com/UrvashiSohaliya2511"
-                target="_blank"
-              >
-                <BsGithub />
-              </Link>
-            </Box>
+      <SimpleGrid
+        w="100%"
+        fontSize="30px"
+        spacing={5}
+        columns={[1, 1, 2, 4]}
+        align="center"
+        justify="center"
+        padding={10}
+        border="1px solid"
+      >
+        <Flex
+          align="center"
+          gap={3}
+          flexDirection={["row", "row", "column", "column"]}
+        >
+          <Box style={iconstyle} _hover={iconhover} data-aos="zoom-in">
             <Link href="https://github.com/UrvashiSohaliya2511" target="_blank">
-              <Text
-                fontSize={["12px", "16px", "18px", "20px"]}
-                color="gray"
-                data-aos="zoom-in"
-              >
-                Github
-              </Text>
+              <BsGithub />
             </Link>
-          </Flex>
-          <Flex align="center" gap={3}>
-            <Box style={iconstyle} _hover={iconhover} data-aos="zoom-in">
-              <Link
-                href="https://www.linkedin.com/in/urvashi-sohaliya-012919235/"
-                target="_blank"
-              >
-                <IoLogoLinkedin />
-              </Link>
-            </Box>
+          </Box>
+          <Link href="https://github.com/UrvashiSohaliya2511" target="_blank">
+            <Text
+              fontSize={["12px", "16px", "18px", "20px"]}
+              color="gray"
+              data-aos="zoom-in"
+              _hover={{ color: "pink" }}
+            >
+              Github
+            </Text>
+          </Link>
+        </Flex>
+        <Flex
+          align="center"
+          gap={3}
+          flexDirection={["row", "row", "column", "column"]}
+        >
+          <Box style={iconstyle} _hover={iconhover} data-aos="zoom-in">
             <Link
               href="https://www.linkedin.com/in/urvashi-sohaliya-012919235/"
               target="_blank"
             >
-              {" "}
-              <Text
-                fontSize={["12px", "16px", "18px", "20px"]}
-                color="gray"
-                data-aos="zoom-in"
-              >
-                Linkedin
-              </Text>
+              <IoLogoLinkedin />
             </Link>
-          </Flex>
-          <Flex align="center" gap={3}>
+          </Box>
+          <Link
+            href="https://www.linkedin.com/in/urvashi-sohaliya-012919235/"
+            target="_blank"
+          >
+            {" "}
+            <Text
+              fontSize={["12px", "16px", "18px", "20px"]}
+              color="gray"
+              data-aos="zoom-in"
+              _hover={{ color: "pink" }}
+            >
+              Linkedin
+            </Text>
+          </Link>
+        </Flex>
+        <Flex
+          align="center"
+          gap={3}
+          flexDirection={["row", "row", "column", "column"]}
+        >
+          <Box style={iconstyle} _hover={iconhover} data-aos="zoom-in">
+            <IoIosCall />
+          </Box>
+          <Text
+            fontSize={["12px", "16px", "18px", "20px"]}
+            color="gray"
+            data-aos="zoom-in"
+            _hover={{ color: "pink" }}
+          >
+            +91 6351938080
+          </Text>
+        </Flex>
+        <Flex
+          align="center"
+          gap={3}
+          flexDirection={["row", "row", "column", "column"]}
+        >
+          <Link
+            href="mailto:urvashisohaliya00@gmail.com?subject = Feedback&body = Message"
+            color="white"
+          >
             <Box style={iconstyle} _hover={iconhover} data-aos="zoom-in">
-              <IoIosCall />
+              <IoMdMail />
             </Box>
-            <Text
-              fontSize={["12px", "16px", "18px", "20px"]}
-              color="gray"
-              data-aos="zoom-in"
-            >
-              +91 6351938080
-            </Text>
-          </Flex>
-          <Flex align="center" gap={3}>
-            <Link
-              href="mailto:urvashisohaliya00@gmail.com?subject = Feedback&body = Message"
-              color="white"
-            >
-              <Box style={iconstyle} _hover={iconhover} data-aos="zoom-in">
-                <IoMdMail />
-              </Box>
-            </Link>
+          </Link>
 
-            <Text
-              fontSize={["12px", "16px", "18px", "20px"]}
-              color="gray"
-              data-aos="zoom-in"
-            >
-              urvashisohaliya00@gmail.com
-            </Text>
-          </Flex>
-        </Stack>
-        <Box></Box>
-        {/* </Flex> */}
+          <Text
+            fontSize={["12px", "16px", "18px", "20px"]}
+            color="gray"
+            data-aos="zoom-in"
+            _hover={{ color: "pink" }}
+          >
+            urvashisohaliya00@gmail.com
+          </Text>
+        </Flex>
       </SimpleGrid>
+      <Text color="whitesmoke">
+        Designed and Developed by Urvashi Sohaliya © 2022 All rights reserved.
+      </Text>
+      {/* <Box></Box> */}
+      {/* </Flex> */}
+      {/* </SimpleGrid> */}
 
       {/* <Img src="https://img.freepik.com/free-vector/flat-customer-support-illustration_23-2148899114.jpg?w=740&t=st=1666608457~exp=1666609057~hmac=cdd8f763c90e23489d52a54357ca462cd36fdc8efee07ced9207421205c6495a" /> */}
     </Stack>

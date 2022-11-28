@@ -7,7 +7,7 @@ import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
 const profile = require("../componants/Assets/Profile3.png");
 const About = () => {
   React.useEffect(() => {
-    AOS.init({ offset: 300, duration: 1000 });
+    AOS.init({ offset: 200, duration: 1000 });
   }, []);
   return (
     <Stack id="about" pt="8%" pb="8%" bg="lightgray">
@@ -39,10 +39,11 @@ const About = () => {
             <Text data-aos="zoom-in">As you know I'm Urvashi Sohaliya.</Text>
 
             <Text data-aos="zoom-in">
-              I am Full Stack Web Developer , Having knowledge of MERN Stack
-              technology . Collaborative , Proficient in working in team and
-              executing goal orianted projects. Looking forward to applying and
-              enhancing my skills and knowledge as a developer.
+              Quick learner and Aspiring full-stack web developer with core
+              knowledge of MERN stack technology. Collaborative, Proficient in
+              working in a team and executing goal-oriented projects, looking
+              forward to applying and enhancing skills and expertise as a
+              developer with a product-based Company.
             </Text>
             <Text
               fontSize="40px"
