@@ -108,6 +108,7 @@ const Project = () => {
             objectFit="fill"
             data-aos="fade-left"
           />
+
           <Stack
             w={["100%", "100%", "50%", "50%"]}
             bg="#111111"
@@ -227,6 +228,21 @@ const Project = () => {
           p={4}
           boxShadow="rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset"
         >
+          {/* <Stack
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; geolocation"
+            w={["100%", "100%", "50%", "50%"]}
+            h="100%"
+
+            // h="100%"
+          >
+            <iframe
+              title="https://sudoku-psi.vercel.app/"
+              src="https://sudoku-psi.vercel.app/"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; geolocation"
+              style={{ height: "100%" }}
+              data-aos="fade-left"
+            ></iframe>
+          </Stack> */}
           <Image
             src={sudoku}
             w={["100%", "100%", "50%", "50%"]}

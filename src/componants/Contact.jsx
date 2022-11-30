@@ -30,7 +30,7 @@ const Contact = () => {
     cursor: "pointer",
   };
   React.useEffect(() => {
-    AOS.init({ offset: 150, duration: 1000 });
+    AOS.init({ offset: 100, duration: 1000 });
   }, []);
   return (
     <Stack id="contact" pb={10} pt={10} bg="black" spacing={5}>
