@@ -1,9 +1,8 @@
 # Urvashi Sohaliya's Portfolio
-<a href = "https://urvashisohaliya2511.github.io/">Portfolio</a>
+<a href = "https://urvashisohaliya2511.github.io/"  target="_blank" >🔗</a>
+<div style={{margin:"auto"}}>
 
-
-<img src = "https://cdn.dribbble.com/users/564797/screenshots/2523707/icon-animation.gif" alt = "img" width="50%"/>
-<img src = "https://thumbs.gfycat.com/LinedJubilantGelding-max-1mb.gif" alt = "img" width="50%"/>
+<img src = "https://thumbs.gfycat.com/LinedJubilantGelding-max-1mb.gif" alt = "img" width="50%" margin="auto"/>
 
 # Features 
 <li>
@@ -17,5 +16,5 @@
 # Tech Stacks :
 <li>
 REACT</li><li>  Chakra-ui </li><li> HTML </li><li> GitHub </li><li>Javascript</li>
-
+</div>
 
