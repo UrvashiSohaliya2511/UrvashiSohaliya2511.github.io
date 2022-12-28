@@ -3,6 +3,7 @@
 
 
 <img src = "https://cdn.dribbble.com/users/564797/screenshots/2523707/icon-animation.gif" alt = "img" width="50%"/>
+<img src = "https://thumbs.gfycat.com/LinedJubilantGelding-max-1mb.gif" alt = "img" width="50%"/>
 
 # Features 
 <li>
