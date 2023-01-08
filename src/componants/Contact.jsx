@@ -141,7 +141,7 @@ const Contact = () => {
               <IoMdMail />
             </Box>
           </Link>
-
+  <Link href="mailto:urvashisohaliya00@gmail.com?subject = Feedback&body = Message" color="white">
           <Text
             fontSize={["12px", "16px", "18px", "20px"]}
             color="gray"
@@ -149,7 +149,7 @@ const Contact = () => {
             _hover={{ color: "pink" }}
           >
             urvashisohaliya00@gmail.com
-          </Text>
+          </Text></Link>
         </Flex>
       </SimpleGrid>
       <Text color="whitesmoke">
